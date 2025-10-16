@@ -8,25 +8,35 @@ body{
 }
 
 header{
-    background-color: black;
+    background-color: aliceblue;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
 }
 
 header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 44px;
-    margin-left: 200px;
     gap: 30px;
-    /* transform: translateX(+250px); */
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    transition: color 1s ease;
+}
+
+header nav a:hover {
+    color: blue; 
 }
 
 .img-sesi{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-left: 20px;
     height: 50px;
     width: 100px;
 }
