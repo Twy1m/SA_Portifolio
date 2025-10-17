@@ -82,17 +82,25 @@ header nav a:hover {
 .img1 img{
     height: 400px;
 }
+
 .img1,
-.img2 {
+.img2,
+.img3 {
     display: flex;
     justify-content: center;
     margin-top: 15px;
 }
 
 .img1 img,
-.img2 img {
+.img2 img,
+.img3 img
+ {
     height: 400px;
     width: 80%;
     border-radius: 12px;
-    box-shadow: 0 2px 10px rgb
+    box-shadow: 0 2px 10px 
+}
+
+.img3{
+    margin-top: 65px;
 }
