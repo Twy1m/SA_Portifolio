@@ -19,10 +19,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
     border-bottom: 1px solid rgba(140, 100, 180, 0.3);
     position: relative;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2em;
@@ -34,6 +41,55 @@ h1 {
 nav a{
     text-decoration: none;
     color: #e8e8f0;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-select select {
+    appearance: none;
+    background: linear-gradient(135deg, #1a1a2e 0%, #12121c 100%);
+    border: 1px solid rgba(140, 100, 180, 0.3);
+    color: #e8e8f0;
+    padding: 12px 40px 12px 15px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.custom-select select:hover {
+    border-color: rgba(140, 100, 180, 0.5);
+    transform: translateY(-2px);
+}
+
+.custom-select select:focus {
+    border-color: rgba(140, 100, 180, 0.7);
+    box-shadow: 0 0 0 2px rgba(140, 100, 180, 0.2);
+}
+
+.custom-select::after {
+    content: "\f078";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #c8c8d8;
+    pointer-events: none;
+    font-size: 0.8em;
+}
+
+.custom-select select option {
+    background: #1a1a2e;
+    color: #e8e8f0;
+    padding: 10px;
 }
 
 .home-icon {

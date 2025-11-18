@@ -5,21 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TWY</title>
-    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="../JS/Select.js"></script>
 
 </head>
 
 <body>
     <header>
-        <h1>TWY./Serviços</h1>
-        <nav>
-            <a href="./index.html">
-                <div class="home-icon">
-                    <i class="fa-regular fa-house"></i>
-                </div>
-            </a>
-        </nav>
+        <h1>TWY./Banco de Dados</h1>
+        <div class="header-right">
+            <div class="custom-select">
+                <select id="pageSelector" onchange="navigateToPage()">
+                    <option value="" disabled selected>Navegar para...</option>
+                    <option value="./eletoeletronica.html">Eletroeletrônica</option>
+                    <option value="./bancoDados.html">Banco de Dados</option>
+                    <option value="./Redes.html">Redes</option>
+                    <option value="./logicaProg.html">Lógica de Programação</option>
+                    <option value="./tecInfo.html">Tecnologia da Informação</option>
+                    <option value="./contatos.html">Contatos</option>
+                </select>
+            </div>
+            <nav>
+                <a href="../index.html">
+                    <div class="home-icon">
+                        <i class="fa-regular fa-house"></i>
+                    </div>
+                </a>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="intro">
@@ -36,7 +50,7 @@
             <div class="grid">
 
                 <nav>
-                    <a href="./HTML/eletoeletronica.html">
+                    <a href="./eletoeletronica.html">
                         <div class="card">
                             <div class="card-image">
                                 <img src="" alt="">
@@ -47,7 +61,7 @@
                 </nav>
 
                 <nav>
-                    <a href="./HTML/bancoDados.html">
+                    <a href="./bancoDados.html">
                         <div class="card">
                             <div class="card-image">
                                 <img src="" alt="">
@@ -58,7 +72,7 @@
                 </nav>
 
                 <nav>
-                    <a href="./HTML/Redes.html">
+                    <a href="./Redes.html">
                         <div class="card">
                             <div class="card-image">
                                 <img src="" alt="">
@@ -69,7 +83,7 @@
                 </nav>
 
                 <nav>
-                    <a href="./HTML/logicaProg.html">
+                    <a href="./logicaProg.html">
                         <div class="card">
                             <div class="card-image">
                                 <img src="" alt="">
@@ -80,7 +94,7 @@
                 </nav>
 
                 <nav>
-                    <a href="./HTML/tecInfo.html">
+                    <a href="./tecInfo.html">
                         <div class="card">
                             <div class="card-image">
                                 <img src="" alt="">
@@ -91,7 +105,7 @@
                 </nav>
 
                 <nav>
-                    <a href="./HTML/contatos.html">
+                    <a href="./contatos.html">
                         <div class="card">
                             <div class="card-image">
                                 <img src="" alt="">
