@@ -13,13 +13,23 @@
 <body>
     <header>
         <h1>TWY./Serviços</h1>
-        <nav>
-            <a href="./index.html">
-                <div class="home-icon">
-                    <i class="fa-regular fa-house"></i>
+        <div class="cabecalho">
+            <div class="header-right">
+                <div class="custom-select"> 
+                    <nav>
+                        <select onchange="window.location.href=this.value">
+                            <option value="" disabled selected>Selecione um tópico</option>
+                            <option value="./HTML/eletoeletronica.html">Eletrônica</option>
+                            <option value="./HTML/bancoDados.html">Banco de Dados</option>
+                            <option value="./Redes.html">Redes</option>
+                            <option value="./logicaProg.html">Lógica de Programação</option>
+                            <option value="./tecInfo.html">Tecnologia da Informação</option>
+                            <option value="./contatos.html">Contatos</option>
+                        </select>
+                    </nav>
                 </div>
-            </a>
-        </nav>
+            </div>
+        </div>
     </header>
     <main>
         <section class="intro">

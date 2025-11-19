@@ -16,15 +16,17 @@
         <h1>TWY./Eletroeletrônica</h1>
         <div class="header-right">
             <div class="custom-select">
-                <select id="pageSelector" onchange="navigateToPage()">
-                    <option value="" disabled selected>Navegar para...</option>
-                    <option value="./eletoeletronica.html">Eletroeletrônica</option>
-                    <option value="./bancoDados.html">Banco de Dados</option>
-                    <option value="./Redes.html">Redes</option>
-                    <option value="./logicaProg.html">Lógica de Programação</option>
-                    <option value="./tecInfo.html">Tecnologia da Informação</option>
-                    <option value="./contatos.html">Contatos</option>
-                </select>
+                <nav>
+                    <select onchange="window.location.href=this.value">
+                        <option value="" disabled selected>Selecione um tópico</option>
+                        <option value="./eletoeletronica.html">Eletrônica</option>
+                        <option value="./bancoDados.html">Banco de Dados</option>
+                        <option value="./Redes.html">Redes</option>
+                        <option value="./logicaProg.html">Lógica de Programação</option>
+                        <option value="./tecInfo.html">Tecnologia da Informação</option>
+                        <option value="./contatos.html">Contatos</option>
+                    </select>
+                </nav>
             </div>
             <nav>
                 <a href="../index.html">
@@ -38,8 +40,7 @@
     <main>
         <section class="intro">
             <div class="intro-text">
-                <p>Esta portfólio apresenta os principais projetos desenvolvidos destacando lógica
-                    de programação,<br> linguagens de programação e o uso de tecnologias atuais na empresa.</p>
+                <p>Este portal oferece um guia completo e estruturado sobre os fundamentos da eletroeletrônica, desde componentes básicos até programação de microcontroladores. Navegue pelos tópicos abaixo para construir seu conhecimento de forma progressiva e prática.</p>
             </div>
             <div class="intro-image">
                 <!-- <img src="./IMG/Abyss.jpg" alt=""> -->
@@ -49,71 +50,101 @@
         <section class="portfolio">
             <div class="grid">
 
-                <nav>
-                    <a href="./eletoeletronica.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-footer">Eletroeletrônica</div>
-                        </div>
-                    </a>
-                </nav>
+        <div class="card">
+            <div class="card-image">
+                                
+                <h2>COMPONENTES ELETRÔNICOS</h2><br>
 
-                <nav>
-                    <a href="./bancoDados.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-footer">Banco de Dados</div>
+                    <div class="info-grid">
+                        <p><br><br><br>
+                            Os <strong>componentes eletrônicos</strong> formam a base de qualquer sistema eletrônico.  O resistor é um componente fundamental <br> que limita o fluxo de corrente elétrica nos circuitos, sendo essencial para proteger outros componentes como LEDs <br> contra danos por excesso de corrente e para dividir tensões em circuitos mais complexos. Os resistores são caracterizados <br> por seu valor em Ohms e sua potência de dissipação <br><br>
+                        </p>
+                        
+                        <div class="img-container">
+                            <img src="../IMG/Abyss.jpg" alt="">
                         </div>
-                    </a>
-                </nav>
 
-                <nav>
-                    <a href="./Redes.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-footer">Redes</div>
-                        </div>
-                    </a>
-                </nav>
+                    </div>
 
-                <nav>
-                    <a href="./logicaProg.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-footer">Lógica de Programação</div>
-                        </div>
-                    </a>
-                </nav>
+                    <hr>
+                     
+                    <div class="info-grid">
 
-                <nav>
-                    <a href="./tecInfo.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-footer">Tecnologia da Informação</div>
+                        <div class="img-container">
+                            <img src="../IMG/Abyss.jpg" alt="">
                         </div>
-                    </a>
-                </nav>
 
-                <nav>
-                    <a href="./contatos.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-footer">Contatos</div>
+                        <p>
+                            <br><br>
+                            O <strong>diodo LED,</strong>ou Diodo Emissor de Luz, é um componente semicondutor que converte energia elétrica diretamente em luz <br> quando polarizado corretamente. Suas aplicações são vastas, desde sinalização visual em equipamentos até iluminação <br>de painéis e indicadores de status, estando disponível em diversas cores como vermelho, verde, azul e branco. <br>
+                        </p>
+                        
+
+                    </div>
+                    
+                    <hr>
+            
+                    <div class="info-grid">
+
+                        <p>
+                            <br><br>
+                            O <strong>transistor</strong> representa um avanço significativo na eletrônica, funcionando como um amplificador ou <br> chave eletrônica. Existem vários tipos como BJT e MOSFET, cada um com características específicas para aplicações <br>como amplificação  de áudio,  chaveamento de cargas e implementação de circuitos lógicos digitais. 
+                        </p>
+
+                        <div class="img-container">
+                            <img src="../IMG/Abyss.jpg" alt="">
                         </div>
-                    </a>
-                </nav>
+
+                    </div>
+                
+                    <hr>
+                     
+                    <div class="info-grid">
+
+                        <div class="img-container">
+                            <img src="../IMG/Abyss.jpg" alt="">
+                        </div>
+
+                        <p>
+                            <br><br>
+                            Os <strong>circuitos integrados</strong> revolucionaram a eletrônica ao miniaturizar múltiplos componentes <br> em um único chip. Podem ser classificados como analógicos para processamento de sinais contínuos, <br> digitais para operações lógicas, ou microcontroladores que incorporam um computador <br>completo em um único circuito integrado.</p>
+                        </p>
+                        
+
+                    </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+
+            </div>
+        </div>
+                
+        <div class="card">
+            <div class="card-image">
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="" alt="">
+            </div>
+        </div>
+
 
             </div>
         </section>
@@ -123,4 +154,5 @@
         <p>TWY</p>
     </footer>
 </body>
+
 </html>

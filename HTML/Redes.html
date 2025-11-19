@@ -17,15 +17,17 @@
         <h1>TWY./Redes</h1>
         <div class="header-right">
             <div class="custom-select">
-                <select id="pageSelector" onchange="navigateToPage()">
-                    <option value="" disabled selected>Navegar para...</option>
-                    <option value="./eletoeletronica.html">Eletroeletrônica</option>
-                    <option value="./bancoDados.html">Banco de Dados</option>
-                    <option value="./Redes.html">Redes</option>
-                    <option value="./logicaProg.html">Lógica de Programação</option>
-                    <option value="./tecInfo.html">Tecnologia da Informação</option>
-                    <option value="./contatos.html">Contatos</option>
-                </select>
+                <nav>
+                    <select onchange="window.location.href=this.value">
+                        <option value="" disabled selected>Selecione um tópico</option>
+                        <option value="./eletoeletronica.html">Eletrônica</option>
+                        <option value="./bancoDados.html">Banco de Dados</option>
+                        <option value="./Redes.html">Redes</option>
+                        <option value="./logicaProg.html">Lógica de Programação</option>
+                        <option value="./tecInfo.html">Tecnologia da Informação</option>
+                        <option value="./contatos.html">Contatos</option>
+                    </select>
+                </nav>
             </div>
             <nav>
                 <a href="../index.html">

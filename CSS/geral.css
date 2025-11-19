@@ -82,7 +82,6 @@ nav a{
     right: 15px;
     transform: translateY(-50%);
     color: #c8c8d8;
-    pointer-events: none;
     font-size: 0.8em;
 }
 
@@ -148,15 +147,15 @@ nav a{
     transform: translateY(-3px);
 }
 
-/* .intro-image img{
+.intro-image img{
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1fr);
     gap: 30px;
     margin-top: 40px;
 }
@@ -181,25 +180,33 @@ nav a{
 }
 
 .card-image {
-    height: 220px;
+    height: auto;
+    padding: 15px;
     background: linear-gradient(135deg, rgba(125, 91, 166, 0.2), rgba(168, 125, 184, 0.15));
     position: relative;
 }
 
-.card-footer {
-    background: linear-gradient(180deg, #7d5ba6 0%, #6d4d96 100%);
-    padding: 15px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 0.95em;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    transition: all 0.3s;
-    opacity: 0.95;
+.info-grid{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 64px;
 }
 
-.card:hover .card-footer {
-    opacity: 1;
+h2{
+text-align: center;
+}
+
+.info-grid p{
+    text-align:justify;
+}
+
+hr {
+    height: 3px; 
+    background-color: #7d5ba6;
+    border-style: solid;
+    margin: 20px auto;
+
 }
 
 footer {
