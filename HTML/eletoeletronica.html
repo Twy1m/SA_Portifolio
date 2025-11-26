@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TWY</title>
     <link rel="stylesheet" href="../CSS/geral.css">
+    <script src="../JS/OHM.js"defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="../JS/Select.js"></script>
 
@@ -281,12 +282,18 @@
                                 <input type="text" id="I" placeholder="Ex: 2"><br>
 
                                 <label for="R">Digite a resistência</label><br>
-                                <input type="text" id="R" placeholder="Ex: 9"><br>
+                                <input type="text" id="R" placeholder="Ex: 9"><br><br>
 
-                                <button onclick="">Calcular</button><br>
-                                <div id="res">aaa</div>
+                                <button onclick="calcular()">Calcular</button><br><br>
+
+                                <div id="res"></div>
                             </div>
-
+                            <select id="op">
+                                <option value="" disabled selected>Selecione qual deseja descobrir</option>
+                                <option value="V">Tensão</option>
+                                <option value="I">Corrente</option>
+                                <option value="R">Resistência</option>
+                            </select>
                         </div>
                     </div>
                 </div>
