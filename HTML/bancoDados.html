@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1>TWY./Banco de Dados</h1>
+        <h1>TWY./Banco-de-Dados</h1>
         <div class="header-right">
             <div class="custom-select">
                 <nav>
@@ -40,83 +40,183 @@
     <main>
         <section class="intro">
             <div class="intro-text">
-                <p>Esta portfólio apresenta os principais projetos desenvolvidos destacando lógica
-                    de programação,<br> linguagens de programação e o uso de tecnologias atuais na empresa.</p>
-            </div>
-            <div class="intro-image">
-                <!-- <img src="./IMG/Abyss.jpg" alt=""> -->
+                <p>Nessa pagina irá encontrar os serviços que aplicamos na aréa de Banco de dados e também
+                    compartilhamos um pouco sobre a aréa com você, aplicamos desde seminários até modelagem</p>
             </div>
         </section>
 
         <section class="portfolio">
             <div class="grid">
 
-                <nav>
-                    <a href="./eletoeletronica.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card-footer">Eletroeletrônica</div>
-                        </div>
-                    </a>
-                </nav>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que é um SGBD? Tipos e Aplicações?</h2>
 
-                <nav>
-                    <a href="./bancoDados.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
+                        <!-- Resistor -->
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="ft1">
                             </div>
-                            <div class="card-footer">Banco de Dados</div>
+                            <p>
+                                Um Sistema de Gerenciamento de Banco de Dados (SGBD) é uma plataforma software que possibilita a criação, manutenção e controle de bancos de dados de forma organizada e segura. Atua como intermediário entre os usuários e os dados armazenados, garantindo integridade, confiabilidade e eficiência no acesso às informações.  
+                                
+                            </p>
                         </div>
-                    </a>
-                </nav>
 
-                <nav>
-                    <a href="./Redes.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
+                        <hr>
+
+                        <!-- LED -->
+                        <div class="info-grid">
+                            <p>
+                                Os SGBDs classificam-se principalmente em relacionais (SQL) e não-relacionais (NoSQL), cada um com características distintas. Os sistemas relacionais, como MySQL e PostgreSQL, organizam os dados em tabelas com esquemas fixos e relações definidas, sendo ideais para aplicações que exigem transações complexas e consistência rigorosa.
+
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/led.jpg" alt="ft2">
                             </div>
-                            <div class="card-footer">Redes</div>
                         </div>
-                    </a>
-                </nav>
 
-                <nav>
-                    <a href="./logicaProg.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
+                        <hr>
+
+                        <!-- Transistor -->
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/transistor.jpg" alt="ft3">
                             </div>
-                            <div class="card-footer">Lógica de Programação</div>
+                            <p>
+                                Já os sistemas não-relacionais, como MongoDB e Redis, oferecem modelos flexíveis de armazenamento, adequados para cenários que demandam escalabilidade horizontal e lidam com dados variáveis ou não estruturados. As aplicações abrangem desde sistemas corporativos e comércio eletrônico até análise de dados em tempo real e soluções de Internet das Coisas, sendo componentes fundamentais em praticamente todos os ambientes que necessitam de armazenamento e recuperação eficiente de informações.
+                            </p>
                         </div>
-                    </a>
-                </nav>
 
-                <nav>
-                    <a href="./tecInfo.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
+                        <hr>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Quais os principais bancos de dados?</h2>
+
+                            <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Sensores">
                             </div>
-                            <div class="card-footer">Tecnologia da Informação</div>
+                            <p>
+                                Dentre as soluções mais relevantes no mercado, destacam-se os bancos relacionais MySQL, amplamente adotado em aplicações web pela sua simplicidade e custo acessível; PostgreSQL, reconhecido por recursos avançados e conformidade com padrões SQL; Oracle Database, voltado para ambientes corporativos de grande porte; e Microsoft SQL Server, integrado ao ecossistema de tecnologias Microsoft. Na esfera não-relacional, MongoDB sobressai pelo modelo de documentos flexíveis; Redis pelo armazenamento em memória para alta performance; Cassandra pela capacidade de distribuição em larga escala; e Elasticsearch por funcionalidades especializadas em busca e análise. A seleção entre estas opções depende de requisitos como volume de dados, estrutura informacional, necessidades de desempenho e contexto operacional específico.
+                            </p>
                         </div>
-                    </a>
-                </nav>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que é um dicionário de dados? Quais os tipos de dados de um banco de dados?</h2>
 
-                <nav>
-                    <a href="./contatos.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="" alt="">
+                        <div class="info-grid">
+                            <p>
+                                Um dicionário de dados consiste em um repositório de metadados que descreve a estrutura, organização e regras associadas aos dados armazenados. Funciona como documentação de referência para administradores, desenvolvedores e analistas, contendo detalhes sobre tabelas, colunas, tipos de dados, relacionamentos, restrições e permissões. No que concerne aos tipos de dados, os bancos suportam categorias fundamentais para assegurar armazenamento apropriado e operações eficientes. Incluem-se tipos numéricos como INT para valores inteiros, DECIMAL para precisão decimal exata e FLOAT para aproximações de ponto flutuante; tipos de texto como VARCHAR para cadeias de caracteres variáveis e TEXT para conteúdos extensos; tipos temporais como DATE e TIMESTAMP para datas e horários; tipos lógicos como BOOLEAN para valores verdadeiro/falso; e tipos binários como BLOB para armazenamento de objetos. A correta especificação desses tipos é crucial para a integridade e otimização do banco de dados.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
                             </div>
-                            <div class="card-footer">Contatos</div>
                         </div>
-                    </a>
-                </nav>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que é uma modelagem de banco de dados? E o modelo DER? MER?</h2>
 
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                            <p>
+                                A modelagem de banco de dados refere-se ao processo de projetar a estrutura lógica e física de um banco, definindo como os dados serão organizados, relacionados e acessados. Trata-se de etapa fundamental no desenvolvimento de sistemas, assegurando que o banco atenda aos requisitos de negócio com eficácia, minimizando redundâncias e inconsistências. O modelo DER (Diagrama Entidade-Relacionamento) é uma ferramenta visual que representa as entidades (objetos do domínio, como "Cliente" ou "Produto"), seus atributos (propriedades das entidades, como "nome" ou "código") e os relacionamentos entre elas (como "pertence a" ou "é vinculado a"). O modelo MER (Modelo Entidade-Relacionamento) amplia esse conceito, incorporando detalhes adicionais como cardinalidades (um-para-um, um-para-muitos) e generalizações, servindo como base para a derivação do modelo lógico que será subsequentemente implementado no SGBD escolhido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Exemplo de um diagrama DER</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                A <strong>linguagem de programação padrão</strong> utilizada no Arduíno é baseada em C/C++. O ambiente de
+                                desenvolvimento (IDE) do Arduíno fornece uma implementação simplificada da linguagem C++
+                                com adições de bibliotecas específicas para controlar as funções da placa. Embora o
+                                Python não seja comumente usado para programar o microcontrolador do Arduíno
+                                diretamente, é possível utilizá-lo para comunicação com a placa via interfaces seriais a
+                                partir de um computador.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que são entradas e saídas digitais em circuitos integrados como o Arduíno</h2>
+
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                            <p>
+                                <strong>Entradas e saídas digitais</strong> são pinos do microcontrolador que trabalham com apenas dois
+                                estados lógicos: ALTO (HIGH, normalmente 5V) e BAIXO (LOW, 0V). Uma entrada digital é
+                                usada para ler o estado de um dispositivo externo, como um botão ou um sensor digital.
+                                Uma saída digital é usada para controlar um componente externo, como acender um LED ou
+                                ativar um relé, fornecendo ou não tensão no pino.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que são entradas e saídas analógicas em circuitos integrados como o Arduíno</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                <strong>Entradas e saídas analógicas</strong> lidam com uma faixa contínua de valores. Uma entrada
+                                analógica, através de um conversor analógico-digital (ADC) no Arduíno, mede uma tensão
+                                variável (ex.: 0 a 5V) e a converte em um valor digital (ex.: 0 a 1023). Isto é
+                                essencial para ler sensores como potenciômetros ou sensores de luz analógicos. Uma saída
+                                analógica no Arduíno é simulada através da modulação por largura de pulso (PWM), que
+                                cria um efeito de tensão variável para controle de brilho em LEDs ou velocidade de
+                                motores.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Cálculo da tensão, corrente, resistência pela Lei de Ohm</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                <strong>A Lei de Ohm</strong> define a relação entre tensão (V), corrente (I) e resistência (R) através
+                                da fórmula V = I * R. Um script para calcular qualquer uma dessas grandezas, desde que
+                                as outras duas sejam conhecidas, pode ser implementado da seguinte forma:
+                            </p>
+                            <div class="leitura">
+                                <label for="V">Digite a Tensão</label><br>
+                                <input type="text" id="V" placeholder="Ex: 4.5"><br>
+
+                                <label for="I">Digite a Corrente</label><br>
+                                <input type="text" id="I" placeholder="Ex: 2"><br>
+
+                                <label for="R">Digite a resistência</label><br>
+                                <input type="text" id="R" placeholder="Ex: 9"><br>
+
+                                <button onclick="">Calcular</button><br>
+                                <div id="res">aaa</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -125,4 +225,5 @@
         <p>TWY</p>
     </footer>
 </body>
+
 </html>

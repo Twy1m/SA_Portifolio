@@ -41,7 +41,7 @@
         <section class="intro">
             <div class="intro-text">
                 <p>Nessa pagina irá encontrar os serviços que aplicamos na aréa de eletroeletrônica e também
-                    compartilhamos um pouco sobre a aréa com você, aplicamos dese componentes básicos até a programação
+                    compartilhamos um pouco sobre a aréa com você, aplicamos desde componentes básicos até a programação
                     de microcontroladores.</p>
             </div>
         </section>
@@ -123,7 +123,7 @@
                                 <img src="../IMG/resistor.jpg" alt="Sensores">
                             </div>
                             <p>
-                                Os sensores são componentes essenciais nos sistemas automatizados, atuando como os
+                                Os <strong>sensores</strong> são componentes essenciais nos sistemas automatizados, atuando como os
                                 sentidos do sistema. O sensor de temperatura, como o LM35, converte variações térmicas
                                 em sinais elétricos. O sensor de umidade, frequentemente do tipo capacitivo como o
                                 DHT11, mede a quantidade de vapor de água no ar. O sensor de luminosidade, como um LDR
@@ -140,7 +140,7 @@
 
                         <div class="info-grid">
                             <p>
-                                O Arduíno é uma plataforma de prototipagem eletrônica de hardware livre e software
+                                O <strong>Arduíno é</strong>  uma plataforma de prototipagem eletrônica de hardware livre e software
                                 livre, baseada em uma placa com um microcontrolador e um ambiente de desenvolvimento
                                 integrado. Ele serve para criar objetos e ambientes interativos, sendo amplamente
                                 aplicado em robótica, automação residencial, prototipagem de produtos e arte interativa.
@@ -164,7 +164,7 @@
                                 <img src="../IMG/resistor.jpg" alt="Arduíno">
                             </div>
                             <p>
-                                O Arduíno funciona executando um programa, denominado sketch, que é carregado em sua
+                                O <strong>Arduíno funciona</strong> executando um programa, denominado sketch, que é carregado em sua
                                 memória. Este programa controla o microcontrolador, que lê sinais das suas entradas,
                                 processa essas informações com base na lógica definida e envia sinais para suas saídas,
                                 interagindo com outros componentes como motores, LEDs e sensores. Eletrônica embarcada
@@ -182,7 +182,7 @@
 
                         <div class="info-grid">
                             <p>
-                                A linguagem de programação padrão utilizada no Arduíno é baseada em C/C++. O ambiente de
+                                A <strong>linguagem de programação padrão</strong> utilizada no Arduíno é baseada em C/C++. O ambiente de
                                 desenvolvimento (IDE) do Arduíno fornece uma implementação simplificada da linguagem C++
                                 com adições de bibliotecas específicas para controlar as funções da placa. Embora o
                                 Python não seja comumente usado para programar o microcontrolador do Arduíno
@@ -204,7 +204,7 @@
                                 <img src="../IMG/resistor.jpg" alt="Arduíno">
                             </div>
                             <p>
-                                Entradas e saídas digitais são pinos do microcontrolador que trabalham com apenas dois
+                                <strong>Entradas e saídas digitais</strong> são pinos do microcontrolador que trabalham com apenas dois
                                 estados lógicos: ALTO (HIGH, normalmente 5V) e BAIXO (LOW, 0V). Uma entrada digital é
                                 usada para ler o estado de um dispositivo externo, como um botão ou um sensor digital.
                                 Uma saída digital é usada para controlar um componente externo, como acender um LED ou
@@ -219,7 +219,7 @@
 
                         <div class="info-grid">
                             <p>
-                                Entradas e saídas analógicas lidam com uma faixa contínua de valores. Uma entrada
+                                <strong>Entradas e saídas analógicas</strong> lidam com uma faixa contínua de valores. Uma entrada
                                 analógica, através de um conversor analógico-digital (ADC) no Arduíno, mede uma tensão
                                 variável (ex.: 0 a 5V) e a converte em um valor digital (ex.: 0 a 1023). Isto é
                                 essencial para ler sensores como potenciômetros ou sensores de luz analógicos. Uma saída
@@ -235,11 +235,41 @@
                 </div>
                 <div class="card">
                     <div class="card-content">
+                        <h2>Programa para leitura de dados de um sensor analógico, acionando saídas digitais.</h2>
+
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                            <p>
+                                O sistema consiste em três camadas principais: um <strong>servidor backend</strong> que gerencia a lógica de negócio e comunicação, um <strong>frontend</strong> que fornece a interface com o usuário, e um <strong>Arduino</strong> que atua como controlador de hardware, formando uma solução completa de IoT
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Diodos, LEDs e Display de 7 Segmentos</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                <strong>O diodo</strong> é um componente semicondutor que permite a passagem de corrente em apenas uma direção, funcionando como uma válvula eletrônica. O LED é um diodo especial que emite luz quando polarizado diretamente. O display de 7 segmentos utiliza múltiplos LEDs organizados em segmentos que podem ser acionados individualmente para formar algarismos numéricos e alguns caracteres alfabéticos, sendo amplamente utilizado em painéis de instrumentos, relógios digitais e mostradores diversos.
+
+
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
                         <h2>Cálculo da tensão, corrente, resistência pela Lei de Ohm</h2>
 
                         <div class="info-grid">
                             <p>
-                                A Lei de Ohm define a relação entre tensão (V), corrente (I) e resistência (R) através
+                                <strong>A Lei de Ohm</strong> define a relação entre tensão (V), corrente (I) e resistência (R) através
                                 da fórmula V = I * R. Um script para calcular qualquer uma dessas grandezas, desde que
                                 as outras duas sejam conhecidas, pode ser implementado da seguinte forma:
                             </p>

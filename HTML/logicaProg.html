@@ -1,37 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/index.css">
-    <title>Portifólio</title>
+    <title>TWY</title>
+    <link rel="stylesheet" href="../CSS/geral.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="../JS/Select.js"></script>
+
 </head>
+
 <body>
     <header>
-        <div class="img-sesi">
-            <img src="../IMG/logo-sesi.png" alt="">
-        </div>
-        <div class="cabecalho">
+        <h1>TWY./Eletroeletrônica</h1>
+        <div class="header-right">
+            <div class="custom-select">
+                <nav>
+                    <select onchange="window.location.href=this.value">
+                        <option value="" disabled selected>Selecione um tópico</option>
+                        <option value="./eletoeletronica.html">Eletrônica</option>
+                        <option value="./bancoDados.html">Banco de Dados</option>
+                        <option value="./Redes.html">Redes</option>
+                        <option value="./logicaProg.html">Lógica de Programação</option>
+                        <option value="./tecInfo.html">Tecnologia da Informação</option>
+                        <option value="./contatos.html">Contatos</option>
+                    </select>
+                </nav>
+            </div>
             <nav>
-                <select onchange="window.location.href=this.value">
-                    <option value="" disabled selected>Selecione um tópico</option>
-                    <option value="./eletoeletronica.html">Eletrônica</option>
-                    <option value="./bancoDados.html">Banco de Dados</option>
-                    <option value="./Redes.html">Redes</option>
-                    <option value="./logicaProg.html">Lógica de Programação</option>
-                    <option value="./tecInfo.html">Tecnologia da Informação</option>
-                    <option value="./contatos.html">Contatos</option>
-                </select>
+                <a href="../index.html">
+                    <div class="home-icon">
+                        <i class="fa-regular fa-house"></i>
+                    </div>
+                </a>
             </nav>
         </div>
     </header>
     <main>
-        <div class="titulo">
+        <section class="intro">
+            <div class="intro-text">
+                <p>Nessa pagina irá encontrar os serviços que aplicamos na aréa de eletroeletrônica e também
+                    compartilhamos um pouco sobre a aréa com você, aplicamos dese componentes básicos até a programação
+                    de microcontroladores.</p>
+            </div>
+        </section>
 
-        </div>
+        <section class="portfolio">
+            <div class="grid">
+
+                <div class="card">
+                    <div class="card-content">
+                        <h2>COMPONENTES ELETRÔNICOS</h2>
+
+                        <!-- Resistor -->
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Resistor">
+                            </div>
+                            <p>
+                                Os componentes eletrônicos formam a base de qualquer sistema eletrônico. O
+                                <strong>resistor</strong> é um componente fundamental que limita o fluxo de corrente
+                                elétrica nos circuitos, sendo essencial para proteger outros componentes como LEDs
+                                contra danos por excesso de corrente e para dividir tensões em circuitos mais complexos.
+                                Os resistores são caracterizados por seu valor em Ohms e sua potência de dissipação.
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <!-- LED -->
+                        <div class="info-grid">
+                            <p>
+                                O <strong>diodo LED</strong>, ou Diodo Emissor de Luz, é um componente semicondutor que
+                                converte energia elétrica diretamente em luz quando polarizado corretamente. Suas
+                                aplicações são vastas, desde sinalização visual em equipamentos até iluminação de
+                                painéis e indicadores de status, estando disponível em diversas cores como vermelho,
+                                verde, azul e branco.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/led.jpg" alt="LED">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- Transistor -->
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/transistor.jpg" alt="Transistor">
+                            </div>
+                            <p>
+                                O <strong>transistor</strong> representa um avanço significativo na eletrônica,
+                                funcionando como um amplificador ou chave eletrônica. Existem vários tipos como BJT e
+                                MOSFET, cada um com características específicas para aplicações como amplificação de
+                                áudio, chaveamento de cargas e implementação de circuitos lógicos digitais.
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <!-- Circuitos Integrados -->
+                        <div class="info-grid">
+                            <p>
+                                Os <strong>circuitos integrados</strong> revolucionaram a eletrônica ao miniaturizar
+                                múltiplos componentes em um único chip. Podem ser classificados como analógicos para
+                                processamento de sinais contínuos, digitais para operações lógicas, ou
+                                microcontroladores que incorporam um computador completo em um único circuito integrado.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/circuito-integrado.jpg" alt="Circuito Integrado">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Sensores Empregados em Sistemas Automatizados </h2>
+
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Sensores">
+                            </div>
+                            <p>
+                                Os <strong>sensores</strong> são componentes essenciais nos sistemas automatizados, atuando como os
+                                sentidos do sistema. O sensor de temperatura, como o LM35, converte variações térmicas
+                                em sinais elétricos. O sensor de umidade, frequentemente do tipo capacitivo como o
+                                DHT11, mede a quantidade de vapor de água no ar. O sensor de luminosidade, como um LDR
+                                (Light Dependent Resistor), altera sua resistência conforme a intensidade de luz
+                                incidente. Estes dispositivos permitem que o sistema automatizado perceba e interaja com
+                                o ambiente ao seu redor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Arduíno: O que é, Para que serve / aplicações, vantagens e desvantagens </h2>
+
+                        <div class="info-grid">
+                            <p>
+                                O <strong>Arduíno é</strong>  uma plataforma de prototipagem eletrônica de hardware livre e software
+                                livre, baseada em uma placa com um microcontrolador e um ambiente de desenvolvimento
+                                integrado. Ele serve para criar objetos e ambientes interativos, sendo amplamente
+                                aplicado em robótica, automação residencial, prototipagem de produtos e arte interativa.
+                                Entre suas vantagens estão a facilidade de uso, a vasta comunidade de suporte, o baixo
+                                custo e a grande variedade de shields e bibliotecas disponíveis. Como desvantagens,
+                                pode-se citar limitações de processamento e memória para projetos complexos e a
+                                necessidade de conhecimentos básicos de eletrônica e programação.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Como o Arduíno funciona? O que é eletrônica embarcada?</h2>
+
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                            <p>
+                                O <strong>Arduíno funciona</strong> executando um programa, denominado sketch, que é carregado em sua
+                                memória. Este programa controla o microcontrolador, que lê sinais das suas entradas,
+                                processa essas informações com base na lógica definida e envia sinais para suas saídas,
+                                interagindo com outros componentes como motores, LEDs e sensores. Eletrônica embarcada
+                                refere-se a sistemas eletrônicos especializados, compostos por hardware e software, que
+                                são integrados dentro de um produto ou sistema maior para desempenhar uma função
+                                específica, como o sistema de controle de uma máquina de lavar ou a unidade de comando
+                                de um automóvel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Arduíno: qual a linguagem de programação usada?</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                A <strong>linguagem de programação padrão</strong> utilizada no Arduíno é baseada em C/C++. O ambiente de
+                                desenvolvimento (IDE) do Arduíno fornece uma implementação simplificada da linguagem C++
+                                com adições de bibliotecas específicas para controlar as funções da placa. Embora o
+                                Python não seja comumente usado para programar o microcontrolador do Arduíno
+                                diretamente, é possível utilizá-lo para comunicação com a placa via interfaces seriais a
+                                partir de um computador.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que são entradas e saídas digitais em circuitos integrados como o Arduíno</h2>
+
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                            <p>
+                                <strong>Entradas e saídas digitais</strong> são pinos do microcontrolador que trabalham com apenas dois
+                                estados lógicos: ALTO (HIGH, normalmente 5V) e BAIXO (LOW, 0V). Uma entrada digital é
+                                usada para ler o estado de um dispositivo externo, como um botão ou um sensor digital.
+                                Uma saída digital é usada para controlar um componente externo, como acender um LED ou
+                                ativar um relé, fornecendo ou não tensão no pino.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que são entradas e saídas analógicas em circuitos integrados como o Arduíno</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                <strong>Entradas e saídas analógicas</strong> lidam com uma faixa contínua de valores. Uma entrada
+                                analógica, através de um conversor analógico-digital (ADC) no Arduíno, mede uma tensão
+                                variável (ex.: 0 a 5V) e a converte em um valor digital (ex.: 0 a 1023). Isto é
+                                essencial para ler sensores como potenciômetros ou sensores de luz analógicos. Uma saída
+                                analógica no Arduíno é simulada através da modulação por largura de pulso (PWM), que
+                                cria um efeito de tensão variável para controle de brilho em LEDs ou velocidade de
+                                motores.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Cálculo da tensão, corrente, resistência pela Lei de Ohm</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                <strong>A Lei de Ohm</strong> define a relação entre tensão (V), corrente (I) e resistência (R) através
+                                da fórmula V = I * R. Um script para calcular qualquer uma dessas grandezas, desde que
+                                as outras duas sejam conhecidas, pode ser implementado da seguinte forma:
+                            </p>
+                            <div class="leitura">
+                                <label for="V">Digite a Tensão</label><br>
+                                <input type="text" id="V" placeholder="Ex: 4.5"><br>
+
+                                <label for="I">Digite a Corrente</label><br>
+                                <input type="text" id="I" placeholder="Ex: 2"><br>
+
+                                <label for="R">Digite a resistência</label><br>
+                                <input type="text" id="R" placeholder="Ex: 9"><br>
+
+                                <button onclick="">Calcular</button><br>
+                                <div id="res">aaa</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <p>By Matheus Gomes Steingräber</p>
+        <p>TWY</p>
     </footer>
 </body>
+
 </html>
