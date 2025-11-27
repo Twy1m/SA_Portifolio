@@ -275,6 +275,14 @@
                                 as outras duas sejam conhecidas, pode ser implementado da seguinte forma:
                             </p>
                             <div class="leitura">
+                                <div class="custom-select">
+                                    <select id="op">
+                                        <option value="" disabled selected>Selecione qual deseja descobrir</option>
+                                        <option value="V">Tensão</option>
+                                        <option value="I">Corrente</option>
+                                        <option value="R">Resistência</option>
+                                    </select>
+                                </div><br><br>
                                 <label for="V">Digite a Tensão</label><br>
                                 <input type="text" id="V" placeholder="Ex: 4.5"><br>
 
@@ -288,12 +296,6 @@
 
                                 <div id="res"></div>
                             </div>
-                            <select id="op">
-                                <option value="" disabled selected>Selecione qual deseja descobrir</option>
-                                <option value="V">Tensão</option>
-                                <option value="I">Corrente</option>
-                                <option value="R">Resistência</option>
-                            </select>
                         </div>
                     </div>
                 </div>

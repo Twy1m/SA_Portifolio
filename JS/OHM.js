@@ -13,15 +13,15 @@ function calcular(){
     if(op === 'V'){
         valor = I*R
         console.log(V)
-        res.innerHTML += `O resultado da Tensão é: ${valor}`
+        res.innerHTML += `O resultado da Tensão é: ${valor.toFixed(3)}`
     }else if(op === 'I'){
         valor = V/R
         console.log(I)
-        res.innerHTML += `O resultado da Corrente é: ${valor}`
+        res.innerHTML += `O resultado da Corrente é: ${valor.toFixed(3)}`
     }else if(op === 'R'){
         valor = V/I
         console.log(R)
-        res.innerHTML += `O resultado da Resistencia é: ${valor}`
+        res.innerHTML += `O resultado da Resistencia é: ${valor.toFixed(3)}`
 
 
     
