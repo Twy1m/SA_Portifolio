@@ -156,7 +156,6 @@
 </html>
 
 
-Script em eletroeletronica
 Reformular logicaComputacional, Prog e TecInfo
 terminar BancodeDados
 Fazer paginas de contatos
