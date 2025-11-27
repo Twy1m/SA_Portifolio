@@ -243,7 +243,7 @@
                                 <img src="../IMG/resistor.jpg" alt="Arduíno">
                             </div>
                             <p>
-                                O sistema consiste em três camadas principais: um <strong>servidor backend</strong> que gerencia a lógica de negócio e comunicação, um <strong>frontend</strong> que fornece a interface com o usuário, e um <strong>Arduino</strong> que atua como controlador de hardware, formando uma solução completa de IoT
+                                POTENCiOMETRO 
                             </p>
                         </div>
                     </div>
@@ -274,31 +274,77 @@
                                 da fórmula V = I * R. Um script para calcular qualquer uma dessas grandezas, desde que
                                 as outras duas sejam conhecidas, pode ser implementado da seguinte forma:
                             </p>
-                            <div class="leitura">
+                            <div>
                                 <div class="custom-select">
                                     <select id="op">
                                         <option value="" disabled selected>Selecione qual deseja descobrir</option>
-                                        <option value="V">Tensão</option>
-                                        <option value="I">Corrente</option>
-                                        <option value="R">Resistência</option>
+                                        <option value="tensao">Tensão</option>
+                                        <option value="corrente">Corrente</option>
+                                        <option value="resistencia">Resistência</option>
                                     </select>
                                 </div><br><br>
-                                <label for="V">Digite a Tensão</label><br>
-                                <input type="text" id="V" placeholder="Ex: 4.5"><br>
 
-                                <label for="I">Digite a Corrente</label><br>
-                                <input type="text" id="I" placeholder="Ex: 2"><br>
 
-                                <label for="R">Digite a resistência</label><br>
-                                <input type="text" id="R" placeholder="Ex: 9"><br><br>
+                                <section id="tensao">
+                                    <label for="I">Digite a Corrente</label><br>
+                                    <input type="text" id="I" placeholder="Ex: 2"><br>
+                                    
+                                    <label for="R">Digite a resistência</label><br>
+                                    <input type="text" id="R" placeholder="Ex: 9"><br>
+                                </section>
+
+                                <section id="resistencia">
+                                    <label for="V">Digite a Tensão</label><br>
+                                    <input type="text" id="V" placeholder="Ex: 4.5"><br>
+        
+                                    <label for="I">Digite a Corrente</label><br>
+                                    <input type="text" id="I" placeholder="Ex: 2"><br>
+                                </section>
+
+                                <section id="corrente">
+                                    <label for="V">Digite a Tensão</label><br>
+                                    <input type="text" id="V" placeholder="Ex: 4.5"><br>
+            
+                                    <label for="R">Digite a resistência</label><br>
+                                    <input type="text" id="R" placeholder="Ex: 9"><br>
+                                </section>
 
                                 <button onclick="calcular()">Calcular</button><br><br>
-
+                                
                                 <div id="res"></div>
-                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Cálculo da tensão, corrente, resistência pela Lei de Ohm</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                <strong>O calculo de Potencia</strong>, medida em Watts (W), calcula a energia que um componente converte ou dissipa por segundo.<br
+                                <strong>A formula é P = R × I²</strong>
+                            </p>
+                            <div class="info">
+                                <label for="r2">Insira a resistência</label><br>
+                                <input type="text" id="r2" placeholder="Ex: 2"><br>
+
+                                <label for="i2">Insira a corrente</label><br>
+                                <input type="text" id="i2" placeholder="Ex: 2.5"><br>
+
+
+                                
+
+                                <button onclick="potencia()">Calcular</button><br><br>
+                                
+                                <div id="res2"></div>
                         </div>
                     </div>
                 </div>
+            </div>
+
             </div>
         </section>
     </main>
