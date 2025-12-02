@@ -160,6 +160,14 @@ nav a{
     padding: 60px;
 }
 
+.Fluxogramas{
+    text-align: center;
+}
+
+.flux-text{
+    text-align: center
+}
+
 .info-grid {
     display: flex;
     align-items: center;
@@ -168,7 +176,55 @@ nav a{
     margin: 50px 0;
     padding: 30px;
 }
+.ex{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.info-SO{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px 0;
+    padding: 30px;
+}
 
+.SO-imgs{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
+    width: 100%;
+}
+.SO-img {
+    width: 260px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(140, 100, 180, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img-exemplo img{
+    width: 850px;
+    height: 603px;
+    border-radius: 10px;
+    border: 2px solid rgba(140, 100, 180, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.formulario{
+    width: 300px;
+    margin: 0 auto; 
+}
+
+pre{
+    background-color: #000;
+    margin: 40px auto;
+}
 .card h2 {
     text-align: center;
     font-size: 2em;
@@ -188,7 +244,9 @@ nav a{
     max-width: 500px;
 }
 
-.img-container {
+.img-container,
+.img-container2,
+.img-container4{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,12 +255,38 @@ nav a{
 .img-container img {
     width: 300px;
     height: 220px;
-    object-fit: cover;
     border-radius: 10px;
     border: 2px solid rgba(140, 100, 180, 0.4);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+
+.img-container2 img {
+    width: 400px;
+    height: 320px;
+    border-radius: 10px;
+    border: 2px solid rgba(140, 100, 180, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img-container3 img {
+    width: 400px;
+    height: 360px;
+    border-radius: 10px;
+    border: 2px solid rgba(140, 100, 180, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.mapa{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+a{
+    font-size: 32px;
+}
 
 hr {
     height: 2px;
@@ -267,6 +351,9 @@ footer p {
     transition: color 0.3s;
 }
 
-footer p:hover {
+footer p:hover,
+a:hover {
     color: #a87db8;
+    opacity: 1;
+    transition: color 0.3s;
 }

@@ -7,22 +7,22 @@
     <title>TWY</title>
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script src="../JS/Select.js"></script>
 
 </head>
 
 <body>
     <header>
-        <h1>TWY./Eletroeletrônica</h1>
+        <h1>TWY./Fundamento-de-Redes</h1>
         <div class="header-right">
             <div class="custom-select">
                 <nav>
                     <select onchange="window.location.href=this.value">
                         <option value="" disabled selected>Selecione um tópico</option>
+                        <option value="./Redes.html">Redes</option>
                         <option value="./eletoeletronica.html">Eletrônica</option>
                         <option value="./bancoDados.html">Banco de Dados</option>
-                        <option value="./Redes.html">Redes</option>
                         <option value="./logicaProg.html">Lógica de Programação</option>
+                        <option value="./logicaComp.html">Lógica Computacional</option>
                         <option value="./tecInfo.html">Tecnologia da Informação</option>
                         <option value="./contatos.html">Contatos</option>
                     </select>
@@ -40,9 +40,11 @@
     <main>
         <section class="intro">
             <div class="intro-text">
-                <p>Nessa pagina irá encontrar os serviços que aplicamos na aréa de eletroeletrônica e também
-                    compartilhamos um pouco sobre a aréa com você, aplicamos dese componentes básicos até a programação
-                    de microcontroladores.</p>
+                <p>Nessa página exploramos os fundamentos essenciais das redes de computadores, desde os conceitos
+                    básicos de comunicação até as arquiteturas complexas que sustentam a internet moderna. Compreender
+                    redes é fundamental em um mundo cada vez mais conectado, onde a transferência eficiente e segura de
+                    dados se tornou pilar da transformação digital. Aqui você encontrará explicações claras sobre
+                    protocolos, topologias, segurança e muito mais</p>
             </div>
         </section>
 
@@ -51,215 +53,301 @@
 
                 <div class="card">
                     <div class="card-content">
-                        <h2>COMPONENTES ELETRÔNICOS</h2>
+                        <h2>O que são redes de computadores?</h2>
 
                         <!-- Resistor -->
                         <div class="info-grid">
                             <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Resistor">
+                                <img src="../IMG/redes.png" alt="Redes de computadores">
                             </div>
                             <p>
-                                Os componentes eletrônicos formam a base de qualquer sistema eletrônico. O
-                                <strong>resistor</strong> é um componente fundamental que limita o fluxo de corrente
-                                elétrica nos circuitos, sendo essencial para proteger outros componentes como LEDs
-                                contra danos por excesso de corrente e para dividir tensões em circuitos mais complexos.
-                                Os resistores são caracterizados por seu valor em Ohms e sua potência de dissipação.
+                                Redes de Computadores são sistemas interconectados que permitem a comunicação e o
+                                compartilhamento de recursos entre dois ou mais dispositivos computacionais, como
+                                computadores, servidores, roteadores, switches, impressoras e smartphones. O principal
+                                objetivo dessas redes é facilitar a troca de informações e o acesso a recursos
+                                compartilhados, possibilitando que usuários em diferentes localizações possam colaborar,
+                                acessar dados remotos, utilizar serviços online e executar tarefas de forma integrada.
+                                Esses sistemas são construídos sobre uma arquitetura que define como os dispositivos se
+                                conectam e se comunicam, utilizando protocolos padronizados
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que é uma rede mínima</h2>
+
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/redeMinima.png" alt="tipologia">
+                            </div>
+                            <p>
+                                Uma rede mínima é um conceito da área de redes de computadores que se refere à menor configuração possível de hardware e software necessária para estabelecer comunicação básica e funcional entre dispositivos. Ela representa a infraestrutura mais simples, essencial e econômica capaz de permitir a troca de dados, sem componentes supérfluos ou recursos avançados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que é a internet?</h2>
+
+                        <div class="info-grid">
+                            <p>
+                               A Internet é uma rede global de comunicação que interconecta milhões de dispositivos em todo o mundo, permitindo a troca de informações, o acesso a serviços e a comunicação em tempo real. Tecnicamente, ela funciona como uma "rede de redes", composta por uma infraestrutura física, um conjunto de protocolos padronizados e uma ampla camada de serviços, que juntos formam um sistema descentralizado e colaborativo.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/protocoloRede.jpg" alt="Arduíno">
+                            </div>
+                        </div>
+
+                            <hr>
+
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/imagem.jpg" alt="">
+                            </div>
+                            <p>
+                                A estrutura básica da Internet começa com a infraestrutura física, que inclui os componentes materiais necessários para a transmissão de dados, como cabos de fibra óptica terrestres e submarinos, satélites, torres de transmissão sem fio, roteadores, switches, servidores e os próprios dispositivos finais dos usuários, como computadores e smartphones. Sobre essa base opera a camada de protocolos e padrões, que são as regras e linguagens que permitem a comunicação organizada entre os dispositivos. O conjunto de protocolos TCP/IP é o mais fundamental, mas também são essenciais o DNS, que converte nomes de domínio em endereços IP; o HTTP/HTTPS, que viabiliza a navegação na web; o SMTP, para o envio de e-mails; e o BGP, responsável pelo roteamento entre redes autônomas.
+
+                            </p>
+                        </div>
+
+                        <hr>
+                        
+                        <div class="info-grid">
+                            <p>
+                               Por fim, existe a camada de serviços e aplicações, que é a parte visível e diretamente utilizada pelas pessoas. Aqui se encontram a World Wide Web, com seus sites e navegadores; serviços de e-mail; redes sociais; plataformas de streaming; comércio eletrônico; aplicativos de mensagem; e ferramentas baseadas em nuvem. Todas essas funcionalidades dependem integralmente das duas camadas anteriores para operar, formando assim um ecossistema tecnológico integrado e global.
+                            </p>
+
+                            <p>
+                               Em essência, a Internet é um ecossistema tecnológico complexo e em constante evolução, resultado da integração entre hardware, protocolos padronizados e uma infinidade de serviços, que, em conjunto, tornam possível a comunicação e o compartilhamento de informação em escala global.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que é WEB</h2>
+
+                        <div class="info-grid">
+                            <div class="img-container3">
+                                <img src="../IMG/Web.jpg" alt="Arduíno">
+                            </div>
+                            <p>
+                                A web (ou World Wide Web, frequentemente abreviada como WWW) é um sistema de informações interligadas, acessíveis através da internet, que permite a consulta e o compartilhamento de documentos, mídias e outros recursos por meio de páginas web. Essas páginas são escritas em linguagens como HTML e podem conter textos, imagens, vídeos, links hipertextuais e elementos interativos. Para acessá-las, utilizamos navegadores (como Chrome, Firefox ou Safari), que interpretam o código e apresentam o conteúdo de forma visual.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Mapa de fibra óptica</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                O mapa de fibra óptica da internet é uma representação visual da rede global de cabos de fibra óptica que formam a espinha dorsal (backbone) das comunicações mundiais. Esses cabos, que podem ser terrestres ou submarinos, são responsáveis por transmitir a grande maioria dos dados entre países e continentes cerca de 99% do tráfego internacional da internet passa por eles.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/fibra.jpg" alt="Arduíno">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Componentes de hardware de uma rede wi-fi</h2>
+
+    
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/roteador.jpg" alt="Roteador">
+                            </div>
+                            <p>
+                                Os componentes de hardware de uma rede Wi‑Fi são os dispositivos físicos necessários para criar, transmitir, receber e gerenciar a comunicação sem fio entre dispositivos em uma rede local e, em geral, conectá‑la à internet. O elemento central é o roteador Wi‑Fi, que se conecta ao modem — ou integra a função de modem em um único aparelho — e converte o sinal da internet recebido em ondas de radiofrequência, distribuindo‑o para os dispositivos próximos. Junto a ele, os pontos de acesso são usados para estender a cobertura do sinal, especialmente em áreas maiores ou com muitas barreiras físicas, sendo conectados ao roteador via cabo Ethernet para retransmitir o sinal sem fio de forma organizada.
                             </p>
                         </div>
 
                         <hr>
 
-                        <!-- LED -->
+            
                         <div class="info-grid">
                             <p>
-                                O <strong>diodo LED</strong>, ou Diodo Emissor de Luz, é um componente semicondutor que
-                                converte energia elétrica diretamente em luz quando polarizado corretamente. Suas
-                                aplicações são vastas, desde sinalização visual em equipamentos até iluminação de
-                                painéis e indicadores de status, estando disponível em diversas cores como vermelho,
-                                verde, azul e branco.
+                                Para que os dispositivos possam se conectar à rede, também são necessários adaptadores de rede Wi‑Fi, que podem ser placas internas ou dispositivos USB, permitindo que computadores e equipamentos sem capacidade nativa de conexão sem fio acessem a rede. Além disso, muitos roteadores e pontos de acesso contam com antenas, internas ou externas, que direcionam e amplificam o sinal, melhorando o alcance e a estabilidade. Os dispositivos clientes, como smartphones, laptops, tablets, TVs inteligentes e equipamentos de Internet das Coisas, são os que de fato utilizam a rede para comunicação e acesso a serviços.
                             </p>
                             <div class="img-container">
-                                <img src="../IMG/led.jpg" alt="LED">
+                                <img src="../IMG/placaDerede.png" alt="placa De rede">
                             </div>
                         </div>
 
                         <hr>
 
-                        <!-- Transistor -->
                         <div class="info-grid">
                             <div class="img-container">
-                                <img src="../IMG/transistor.jpg" alt="Transistor">
+                                <img src="../IMG/swich.jpg" alt="Swich">
                             </div>
                             <p>
-                                O <strong>transistor</strong> representa um avanço significativo na eletrônica,
-                                funcionando como um amplificador ou chave eletrônica. Existem vários tipos como BJT e
-                                MOSFET, cada um com características específicas para aplicações como amplificação de
-                                áudio, chaveamento de cargas e implementação de circuitos lógicos digitais.
+                               Em redes domésticas ou de menor porte, costumam ser usados repetidores ou extensores Wi‑Fi, que recebem o sinal do roteador principal e o retransmitem para áreas de baixa cobertura, embora possam reduzir a velocidade da conexão. Em ambientes mais complexos, como empresas ou instituições, são empregados switches para interligar vários pontos de acesso e dispositivos via cabo, organizando o tráfego, e controladores de rede wireless, que gerenciam de forma centralizada múltiplos pontos de acesso, oferecendo configuração unificada, segurança avançada e monitoramento. Todos esses componentes trabalham em conjunto para formar uma infraestrutura de rede sem fio funcional, segura e capaz de atender às demandas de comunicação e conectividade atuais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Componentes de hardware de uma rede local com cabo de rede</h2>
+
+    
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/trafego.jpg" alt="Roteador">
+                            </div>
+                            <p>
+                                Os componentes de hardware de uma rede local com cabo (ou rede cabeada) são os dispositivos físicos que permitem a interligação, a comunicação e o compartilhamento de recursos entre computadores e outros equipamentos em um espaço delimitado, como um escritório, uma escola ou uma residência. Essa infraestrutura é conhecida pela estabilidade, segurança e desempenho geralmente superior em comparação com redes sem fio, especialmente em ambientes com alta demanda de tráfego de dados.
                             </p>
                         </div>
 
                         <hr>
-
-                        <!-- Circuitos Integrados -->
+            
                         <div class="info-grid">
                             <p>
-                                Os <strong>circuitos integrados</strong> revolucionaram a eletrônica ao miniaturizar
-                                múltiplos componentes em um único chip. Podem ser classificados como analógicos para
-                                processamento de sinais contínuos, digitais para operações lógicas, ou
-                                microcontroladores que incorporam um computador completo em um único circuito integrado.
+                                O componente fundamental é o switch de rede, um dispositivo que atua como um ponto central de conexão, permitindo que vários equipamentos sejam interligados por cabos e comuniquem-se entre si de forma eficiente, direcionando os pacotes de dados apenas para o destino correto. Em redes menores ou domésticas, é comum o uso de roteadores com portas LAN integradas, que combinam as funções de roteamento (conexão com a internet) e comutação local. Para conectar a rede local à internet, é necessário um modem, que converte o sinal do provedor de acesso (seja via fibra óptica, cabo coaxial ou linha telefônica) em um sinal digital compreensível pelos dispositivos da rede.
                             </p>
                             <div class="img-container">
-                                <img src="../IMG/circuito-integrado.jpg" alt="Circuito Integrado">
+                                <img src="../IMG/coaxial.jpg" alt="cabo coaxial">
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h2>Sensores Empregados em Sistemas Automatizados </h2>
-
+                        
+                        <hr>
+                        
                         <div class="info-grid">
                             <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Sensores">
+                                <img src="../IMG/caboRede.jpg" alt="Swich">
                             </div>
                             <p>
-                                Os <strong>sensores</strong> são componentes essenciais nos sistemas automatizados, atuando como os
-                                sentidos do sistema. O sensor de temperatura, como o LM35, converte variações térmicas
-                                em sinais elétricos. O sensor de umidade, frequentemente do tipo capacitivo como o
-                                DHT11, mede a quantidade de vapor de água no ar. O sensor de luminosidade, como um LDR
-                                (Light Dependent Resistor), altera sua resistência conforme a intensidade de luz
-                                incidente. Estes dispositivos permitem que o sistema automatizado perceba e interaja com
-                                o ambiente ao seu redor.
+                                A conexão física é realizada por meio de cabos de rede, sendo o mais comum o cabo de par trançado (UTP ou FTP) com conector RJ45, categorias como Cat5e, Cat6 ou Cat7, que definem a velocidade máxima e a imunidade a interferências. Cada dispositivo da rede — como computadores (desktops ou laptops), servidores, impressoras de rede, câmeras de vigilância IP e telefones VoIP — precisa estar equipado com uma placa de interface de rede (NIC), que pode ser integrada à placa‑mãe ou instalada separadamente, fornecendo a porta RJ45 para o cabo.
                             </p>
                         </div>
                     </div>
+
+                    <hr>
+
+                    <div class="info-grid">
+                        <p>
+                            Em instalações mais extensas, são utilizados patch panels, que organizam as terminações dos cabos vindos das diversas tomadas de rede distribuídas pelos ambientes, facilitando a gestão e a manutenção das conexões. Patch cords (cabos curtos de rede) conectam o patch panel aos switches. Para redes que precisam abranger distâncias maiores que o limite de um cabo (geralmente 100 metros para par trançado), são empregados repetidores ou conversores de mídia, que regeneram o sinal ou convertem o tipo de meio físico, por exemplo, de cabo de cobre para fibra óptica.
+                        </p>
+                        <div class="img-container">
+                            <img src="../IMG/fibraOptica.jpg" alt="placa De rede">
+                        </div>
+                    </div>
+
                 </div>
+                
                 <div class="card">
                     <div class="card-content">
-                        <h2>Arduíno: O que é, Para que serve / aplicações, vantagens e desvantagens </h2>
+                        <h2>Protocolo de comunicação</h2>
 
                         <div class="info-grid">
                             <p>
-                                O <strong>Arduíno é</strong>  uma plataforma de prototipagem eletrônica de hardware livre e software
-                                livre, baseada em uma placa com um microcontrolador e um ambiente de desenvolvimento
-                                integrado. Ele serve para criar objetos e ambientes interativos, sendo amplamente
-                                aplicado em robótica, automação residencial, prototipagem de produtos e arte interativa.
-                                Entre suas vantagens estão a facilidade de uso, a vasta comunidade de suporte, o baixo
-                                custo e a grande variedade de shields e bibliotecas disponíveis. Como desvantagens,
-                                pode-se citar limitações de processamento e memória para projetos complexos e a
-                                necessidade de conhecimentos básicos de eletrônica e programação.
+                                Um protocolo de comunicação é um conjunto padronizado de regras e convenções que define como os dispositivos em uma rede devem estruturar, enviar, receber e interpretar dados, garantindo que a troca de informações ocorra de forma organizada, confiável e compreensível entre sistemas distintos, independentemente de suas plataformas ou fabricantes; exemplos fundamentais incluem o TCP/IP, que gerencia a entrega e o roteamento básico dos pacotes na internet, o HTTP/HTTPS para a navegação web, o DNS para traduzir nomes em endereços numéricos, e o Wi‑Fi (IEEE 802.11) para comunicações sem fio, sendo esses protocolos a base que possibilita toda a interoperabilidade e o funcionamento coordenado das redes modernas.
                             </p>
                             <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                                <img src="../IMG/protocoloRede.jpg" alt="Arduíno">
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card-content">
-                        <h2>Como o Arduíno funciona? O que é eletrônica embarcada?</h2>
+                        <h2>Modelo OSI</h2>
 
                         <div class="info-grid">
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            <div class="img-container2">
+                                <img src="../IMG/OSI.png" alt="OSI">
                             </div>
                             <p>
-                                O <strong>Arduíno funciona</strong> executando um programa, denominado sketch, que é carregado em sua
-                                memória. Este programa controla o microcontrolador, que lê sinais das suas entradas,
-                                processa essas informações com base na lógica definida e envia sinais para suas saídas,
-                                interagindo com outros componentes como motores, LEDs e sensores. Eletrônica embarcada
-                                refere-se a sistemas eletrônicos especializados, compostos por hardware e software, que
-                                são integrados dentro de um produto ou sistema maior para desempenhar uma função
-                                específica, como o sistema de controle de uma máquina de lavar ou a unidade de comando
-                                de um automóvel.
+                                O modelo OSI (Open Systems Interconnection) é um modelo de referência teórico, desenvolvido pela ISO, que organiza as funções de uma rede de comunicação em sete camadas distintas, cada uma responsável por um aspecto específico do processo de transmissão de dados, começando pela camada física (transmissão de sinais brutos) e subindo até a camada de aplicação (interface com o usuário), com o objetivo principal de padronizar e facilitar a interoperabilidade entre diferentes sistemas e tecnologias de rede, servindo como uma ferramenta fundamental para o ensino, o projeto e a solução de problemas em redes de computadores, embora não seja implementado diretamente na prática onde o modelo TCP/IP é o padrão efetivamente utilizado na internet.
                             </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card-content">
-                        <h2>Arduíno: qual a linguagem de programação usada?</h2>
+                        <h2>TCP/IP</h2>
 
                         <div class="info-grid">
                             <p>
-                                A <strong>linguagem de programação padrão</strong> utilizada no Arduíno é baseada em C/C++. O ambiente de
-                                desenvolvimento (IDE) do Arduíno fornece uma implementação simplificada da linguagem C++
-                                com adições de bibliotecas específicas para controlar as funções da placa. Embora o
-                                Python não seja comumente usado para programar o microcontrolador do Arduíno
-                                diretamente, é possível utilizá-lo para comunicação com a placa via interfaces seriais a
-                                partir de um computador.
+                                O modelo TCP/IP é um conjunto prático de protocolos de comunicação que estrutura a internet e a maioria das redes modernas, organizado em quatro camadas funcionais: a camada de Aplicação, que agrupa os protocolos de interação com o usuário, como HTTP, FTP e SMTP; a camada de Transporte, representada principalmente pelo TCP (para transmissão confiável) e pelo UDP (para transmissão rápida), garantindo a comunicação fim a fim; a camada de Internet, onde o protocolo IP atua no roteamento e endereçamento lógico dos pacotes; e a camada de Acesso à Rede, responsável pela transmissão física dos dados, englobando padrões como Ethernet e Wi-Fi. Diferente do modelo OSI  que é uma referência teórica de sete camadas o TCP/IP surgiu da evolução prática das redes, sendo mais enxuto, flexível e diretamente implementado na arquitetura da internet, servindo como base real para a comunicação global de dados.
                             </p>
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            <div class="img-container2">
+                                <img src="../IMG/TCPIP.png" alt="TCP IP">
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>                
+
                 <div class="card">
                     <div class="card-content">
-                        <h2>O que são entradas e saídas digitais em circuitos integrados como o Arduíno</h2>
+                        <h2>Protocolo IP V4 e IP V6</h2>
 
                         <div class="info-grid">
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            <div class="img-container2">
+                                <img src="../IMG/ipv.png" alt="OSI">
                             </div>
                             <p>
-                                <strong>Entradas e saídas digitais</strong> são pinos do microcontrolador que trabalham com apenas dois
-                                estados lógicos: ALTO (HIGH, normalmente 5V) e BAIXO (LOW, 0V). Uma entrada digital é
-                                usada para ler o estado de um dispositivo externo, como um botão ou um sensor digital.
-                                Uma saída digital é usada para controlar um componente externo, como acender um LED ou
-                                ativar um relé, fornecendo ou não tensão no pino.
+                                O IPv4 é a versão tradicional do protocolo de internet, que utiliza endereços de 32 bits, como 192.168.1.1, para identificar dispositivos na rede, oferecendo cerca de 4,3 bilhões de endereços únicos, um número que se tornou insuficiente com a expansão da internet, levando ao uso de soluções como o NAT; já o IPv6 é sua evolução, criada para resolver essa escassez, empregando endereços de 128 bits no formato hexadecimal, como 2001:0db8::1, o que proporciona um espaço virtualmente ilimitado de endereços, além de incluir melhorias nativas em segurança, eficiência de roteamento e suporte a dispositivos móveis e IoT, sendo fundamental para a sustentabilidade e o crescimento futuro da rede global.
                             </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card-content">
-                        <h2>O que são entradas e saídas analógicas em circuitos integrados como o Arduíno</h2>
+                        <h2>TCP/IP</h2>
 
                         <div class="info-grid">
                             <p>
-                                <strong>Entradas e saídas analógicas</strong> lidam com uma faixa contínua de valores. Uma entrada
-                                analógica, através de um conversor analógico-digital (ADC) no Arduíno, mede uma tensão
-                                variável (ex.: 0 a 5V) e a converte em um valor digital (ex.: 0 a 1023). Isto é
-                                essencial para ler sensores como potenciômetros ou sensores de luz analógicos. Uma saída
-                                analógica no Arduíno é simulada através da modulação por largura de pulso (PWM), que
-                                cria um efeito de tensão variável para controle de brilho em LEDs ou velocidade de
-                                motores.
+                                O modelo TCP/IP é um conjunto prático de protocolos de comunicação que estrutura a internet e a maioria das redes modernas, organizado em quatro camadas funcionais: a camada de Aplicação, que agrupa os protocolos de interação com o usuário, como HTTP, FTP e SMTP; a camada de Transporte, representada principalmente pelo TCP (para transmissão confiável) e pelo UDP (para transmissão rápida), garantindo a comunicação fim a fim; a camada de Internet, onde o protocolo IP atua no roteamento e endereçamento lógico dos pacotes; e a camada de Acesso à Rede, responsável pela transmissão física dos dados, englobando padrões como Ethernet e Wi-Fi. Diferente do modelo OSI  que é uma referência teórica de sete camadas o TCP/IP surgiu da evolução prática das redes, sendo mais enxuto, flexível e diretamente implementado na arquitetura da internet, servindo como base real para a comunicação global de dados.
                             </p>
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            <div class="img-container2">
+                                <img src="../IMG/TCPIP.png" alt="TCP IP">
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card-content">
-                        <h2>Cálculo da tensão, corrente, resistência pela Lei de Ohm</h2>
+                        <h2>HTTP e HTTPS</h2>
+
+                        <div class="info-grid">
+                            <div class="img-container2">
+                                <img src="../IMG/http.jpg" alt="OSI">
+                            </div>
+                            <p>
+                                O protocolo HTTP (Hypertext Transfer Protocol) é o protocolo de comunicação fundamental da World Wide Web, operando no modelo cliente‑servidor, no qual um navegador ou aplicativo (cliente) envia uma requisição — contendo um método como GET ou POST, cabeçalhos e, opcionalmente, um corpo — a um servidor, que processa a solicitação e retorna uma resposta com um código de status (por exemplo, 200 para sucesso ou 404 para não encontrado), seus próprios cabeçalhos e o conteúdo solicitado, como uma página HTML, uma imagem ou dados em JSON; originalmente sem estado e transmitido em texto plano, o HTTP evoluiu para sua versão segura, o HTTPS, que adiciona criptografia via TLS/SSL, e para versões mais eficientes como HTTP/2 e HTTP/3, mantendo‑se como a base técnica que possibilita a navegação, as APIs e a troca de dados na internet atual.
+                            </p>
+                        </div>
+                    </div>
+                </div>                
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Express</h2>
 
                         <div class="info-grid">
                             <p>
-                                <strong>A Lei de Ohm</strong> define a relação entre tensão (V), corrente (I) e resistência (R) através
-                                da fórmula V = I * R. Um script para calcular qualquer uma dessas grandezas, desde que
-                                as outras duas sejam conhecidas, pode ser implementado da seguinte forma:
+                                O Express é o framework mais popular e amplamente utilizado para programação com o protocolo HTTP em Node.js. Ele simplifica a criação de servidores web, APIs e aplicações back‑end, fornecendo uma camada minimalista e flexível sobre o módulo nativo http do Node.js.
                             </p>
-                            <div class="leitura">
-                                <label for="V">Digite a Tensão</label><br>
-                                <input type="text" id="V" placeholder="Ex: 4.5"><br>
-
-                                <label for="I">Digite a Corrente</label><br>
-                                <input type="text" id="I" placeholder="Ex: 2"><br>
-
-                                <label for="R">Digite a resistência</label><br>
-                                <input type="text" id="R" placeholder="Ex: 9"><br>
-
-                                <button onclick="">Calcular</button><br>
-                                <div id="res">aaa</div>
+                            <div class="img-container2">
+                                <img src="../IMG/express.png" alt="TCP IP">
                             </div>
-
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     </main>

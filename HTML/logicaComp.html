@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TWY</title>
     <link rel="stylesheet" href="../CSS/geral.css">
-    <script src="../JS/OHM.js"defer></script>
+    <script src="../JS/OHM.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script src="../JS/Select.js"></script>
+
 
 </head>
 
 <body>
     <header>
-        <h1>TWY./Eletroeletrônica</h1>
+        <h1>TWY./Logica-Computacional</h1>
         <div class="header-right">
             <div class="custom-select">
                 <nav>
                     <select onchange="window.location.href=this.value">
                         <option value="" disabled selected>Selecione um tópico</option>
+                        <option value="./logicaComp.html">Lógica Computacional</option>
                         <option value="./eletoeletronica.html">Eletrônica</option>
                         <option value="./bancoDados.html">Banco de Dados</option>
                         <option value="./Redes.html">Redes</option>
@@ -41,9 +42,11 @@
     <main>
         <section class="intro">
             <div class="intro-text">
-                <p>Nessa pagina irá encontrar os serviços que aplicamos na aréa de eletroeletrônica e também
-                    compartilhamos um pouco sobre a aréa com você, aplicamos desde componentes básicos até a programação
-                    de microcontroladores.</p>
+                <p>Nessa pagina irá encontrar sobre lógica computacional, que estuda os princípios formais do raciocínio
+                    aplicados à programação e ao funcionamento dos computadores, incluindo temas como proposições,
+                    operadores lógicos, estruturas condicionais, loops e técnicas de resolução de problemas. Seu domínio
+                    é fundamental para a criação de algoritmos eficientes, a depuração de códigos e o pensamento
+                    analítico necessário para o desenvolvimento de software.</p>
             </div>
         </section>
 
@@ -52,250 +55,420 @@
 
                 <div class="card">
                     <div class="card-content">
-                        <h2>COMPONENTES ELETRÔNICOS</h2>
+                        <h2>Fluxograma</h2>
 
-                        <!-- Resistor -->
+                        <p class="Fluxogramas">Fluxogramas são representações visuais e esquemáticas de um processo,
+                            sistema ou algoritmo, utilizando símbolos padronizados conectados por setas que indicam a
+                            sequência e o fluxo das operações. Eles servem para documentar, analisar, projetar e
+                            comunicar de forma clara e lógica as etapas envolvidas na resolução de um problema ou na
+                            execução de uma tarefa, sendo amplamente utilizados em áreas como programação,
+                            administração, engenharia e melhoria de processos.</p>
+
                         <div class="info-grid">
                             <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Resistor">
+                                <img src="../IMG/Termin.jpg" alt="">
                             </div>
-                            <p>
-                                Os componentes eletrônicos formam a base de qualquer sistema eletrônico. O
-                                <strong>resistor</strong> é um componente fundamental que limita o fluxo de corrente
-                                elétrica nos circuitos, sendo essencial para proteger outros componentes como LEDs
-                                contra danos por excesso de corrente e para dividir tensões em circuitos mais complexos.
-                                Os resistores são caracterizados por seu valor em Ohms e sua potência de dissipação.
-                            </p>
-                        </div>
-
-                        <hr>
-
-                        <!-- LED -->
-                        <div class="info-grid">
-                            <p>
-                                O <strong>diodo LED</strong>, ou Diodo Emissor de Luz, é um componente semicondutor que
-                                converte energia elétrica diretamente em luz quando polarizado corretamente. Suas
-                                aplicações são vastas, desde sinalização visual em equipamentos até iluminação de
-                                painéis e indicadores de status, estando disponível em diversas cores como vermelho,
-                                verde, azul e branco.
-                            </p>
-                            <div class="img-container">
-                                <img src="../IMG/led.jpg" alt="LED">
+                            <div class="flux-text">
+                                <h3>TERMINADOR</h3>
+                                <p>
+                                    Indica o início ou o fim do processo.
+                                </p>
                             </div>
                         </div>
 
                         <hr>
 
-                        <!-- Transistor -->
                         <div class="info-grid">
-                            <div class="img-container">
-                                <img src="../IMG/transistor.jpg" alt="Transistor">
+                            <div class="flux-text">
+                                <h3>PROCESSO</h3>
+                                <p>
+                                    Representa uma ação, operação ou cálculo.
+                                </p>
                             </div>
-                            <p>
-                                O <strong>transistor</strong> representa um avanço significativo na eletrônica,
-                                funcionando como um amplificador ou chave eletrônica. Existem vários tipos como BJT e
-                                MOSFET, cada um com características específicas para aplicações como amplificação de
-                                áudio, chaveamento de cargas e implementação de circuitos lógicos digitais.
-                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/Pros.jpg" alt="">
+                            </div>
                         </div>
 
                         <hr>
 
-                        <!-- Circuitos Integrados -->
                         <div class="info-grid">
-                            <p>
-                                Os <strong>circuitos integrados</strong> revolucionaram a eletrônica ao miniaturizar
-                                múltiplos componentes em um único chip. Podem ser classificados como analógicos para
-                                processamento de sinais contínuos, digitais para operações lógicas, ou
-                                microcontroladores que incorporam um computador completo em um único circuito integrado.
-                            </p>
                             <div class="img-container">
-                                <img src="../IMG/circuito-integrado.jpg" alt="Circuito Integrado">
+                                <img src="../IMG/Deci.jpg" alt="">
+                            </div>
+                            <div class="flux-text">
+                                <h3>DECISÃO</h3>
+                                <p>
+                                    Usado para perguntas sim/não ou condições que desviam o fluxo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="info-grid">
+                            <div class="flux-text">
+                                <h3>Entrada/Saída</h3>
+                                <p>
+                                    Indica leitura de dados (input) ou exibição de resultados (output).
+                                </p>
+                            </div>
+                            <div class="img-container">
+                                <img src="../IMG/EntraSai.jpg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h2>Sensores Empregados em Sistemas Automatizados </h2>
+                        <h2>O que são algoritmos</h2>
 
                         <div class="info-grid">
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Sensores">
-                            </div>
+
                             <p>
-                                Os <strong>sensores</strong> são componentes essenciais nos sistemas automatizados, atuando como os
-                                sentidos do sistema. O sensor de temperatura, como o LM35, converte variações térmicas
-                                em sinais elétricos. O sensor de umidade, frequentemente do tipo capacitivo como o
-                                DHT11, mede a quantidade de vapor de água no ar. O sensor de luminosidade, como um LDR
-                                (Light Dependent Resistor), altera sua resistência conforme a intensidade de luz
-                                incidente. Estes dispositivos permitem que o sistema automatizado perceba e interaja com
-                                o ambiente ao seu redor.
+                                Algoritmos são conjuntos organizados e finitos de instruções lógicas criados para
+                                realizar uma tarefa específica ou solucionar um problema, funcionando como uma sequência
+                                passo a passo que converte entradas em resultados desejados. Eles formam a base
+                                fundamental da programação e da ciência da computação, mas sua aplicação vai muito além,
+                                permeando diversas áreas do cotidiano e da tecnologia. Na prática, os algoritmos são
+                                utilizados em motores de busca, como o Google, para classificar e recuperar informações;
+                                em redes sociais, para personalizar feeds de notícias; em sistemas de navegação, para
+                                calcular rotas eficientes; e em plataformas de streaming, para recomendar conteúdos com
+                                base nas preferências do usuário. Além disso, estão presentes em setores como finanças,
+                                para detecção de fraudes e análise de crédito; na saúde, para auxiliar em diagnósticos
+                                por imagem; na automação industrial, para controlar processos; e até em tarefas
+                                domésticas, como seguir uma receita. Em resumo, sempre que há um processo estruturado
+                                para transformar dados em ação ou informação útil, há um algoritmo em operação.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h2>Arduíno: O que é, Para que serve / aplicações, vantagens e desvantagens </h2>
+                        <h2>O que é o Portugol</h2>
 
                         <div class="info-grid">
                             <p>
-                                O <strong>Arduíno é</strong>  uma plataforma de prototipagem eletrônica de hardware livre e software
-                                livre, baseada em uma placa com um microcontrolador e um ambiente de desenvolvimento
-                                integrado. Ele serve para criar objetos e ambientes interativos, sendo amplamente
-                                aplicado em robótica, automação residencial, prototipagem de produtos e arte interativa.
-                                Entre suas vantagens estão a facilidade de uso, a vasta comunidade de suporte, o baixo
-                                custo e a grande variedade de shields e bibliotecas disponíveis. Como desvantagens,
-                                pode-se citar limitações de processamento e memória para projetos complexos e a
-                                necessidade de conhecimentos básicos de eletrônica e programação.
+                                Portugol é uma linguagem de programação educacional e algorítmica que utiliza comandos e
+                                estruturas baseados na língua portuguesa, criada para facilitar o aprendizado de lógica
+                                de programação e algoritmos, especialmente por iniciantes que ainda não estão
+                                familiarizados com linguagens de código reais <br><br>
+
+                                Funciona como um pseudocódigo estruturado em português, permitindo que o estudante se
+                                concentre na construção da lógica sem se preocupar inicialmente com a sintaxe rigorosa
+                                ou detalhes técnicos de uma linguagem real. Em geral, o Portugol é executado em
+                                ambientes como Portugol Studios que é uma IDE (Ambiente de Desenvolvimento Integrado)
+                                feita exclusivamente para essa linguagem
                             </p>
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            <div class="img-container2">
+                                <img src="../IMG/PortugolStudio.png" alt="Arduíno">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h2>Como o Arduíno funciona? O que é eletrônica embarcada?</h2>
+                        <h2> O que são variáveis e constantes?</h2>
 
                         <div class="info-grid">
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            <div class="img-container2">
+                                <img src="../IMG/variavel.png" alt="Arduíno">
                             </div>
                             <p>
-                                O <strong>Arduíno funciona</strong> executando um programa, denominado sketch, que é carregado em sua
-                                memória. Este programa controla o microcontrolador, que lê sinais das suas entradas,
-                                processa essas informações com base na lógica definida e envia sinais para suas saídas,
-                                interagindo com outros componentes como motores, LEDs e sensores. Eletrônica embarcada
-                                refere-se a sistemas eletrônicos especializados, compostos por hardware e software, que
-                                são integrados dentro de um produto ou sistema maior para desempenhar uma função
-                                específica, como o sistema de controle de uma máquina de lavar ou a unidade de comando
-                                de um automóvel.
+                                As variáveis funcionam como containers nomeados na memória do computador, capazes de
+                                guardar valores que podem ser alterados ao longo do tempo. Elas são essenciais para
+                                representar informações dinâmicas, como entradas do usuário, resultados intermediários
+                                de cálculos ou estados que mudam conforme a lógica do software <br><br>
+
+                                Já as constantes também são espaços de armazenamento nomeados, mas com uma
+                                característica principal: seus valores são fixos e não podem ser modificados após a
+                                definição inicial. Elas são utilizadas para representar dados imutáveis e frequentemente
+                                conhecidos, como o valor de Pi (π). O uso de constantes aumenta a segurança do código,
+                                pois evita alterações acidentais, e também melhora sua legibilidade e manutenção.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h2>Arduíno: qual a linguagem de programação usada?</h2>
+                        <h2>Quais os tipos de dados mais usados em algoritmos (portugol)? booleanos, caracter, cadeia
+                            (string), inteiro, real, vetor.</h2>
 
                         <div class="info-grid">
                             <p>
-                                A <strong>linguagem de programação padrão</strong> utilizada no Arduíno é baseada em C/C++. O ambiente de
-                                desenvolvimento (IDE) do Arduíno fornece uma implementação simplificada da linguagem C++
-                                com adições de bibliotecas específicas para controlar as funções da placa. Embora o
-                                Python não seja comumente usado para programar o microcontrolador do Arduíno
-                                diretamente, é possível utilizá-lo para comunicação com a placa via interfaces seriais a
-                                partir de um computador.
+                                Os tipos de dados em algoritmos servem para definir o tipo de informação que será
+                                armazenada nas variáveis. No <strong>Portugol,</strong> os mais comuns são:
+                                <strong>inteiro, real, caractere, cadeia (string), lógico (booleano) e vetor.</strong> O
+                                tipo <strong>inteiro</strong> é usado para representar números sem parte decimal, como
+                                5, 10 ou -3. Já o tipo <strong>real</strong> é utilizado para números com casas
+                                decimais, como 3.14 ou 1.75. O tipo <strong>caractere</strong> armazena apenas um único
+                                símbolo, letra, por exemplo 'A', enquanto a <strong>cadeia (string)</strong> guarda um
+                                conjunto de caracteres, formando palavras ou frases, como "Portugol" ou "Olá, mundo!". O
+                                tipo <strong>lógico (ou booleano)</strong> é usado para representar valores de
+                                verdadeiro ou falso, geralmente em testes e condições. Por fim, o <strong>vetor</strong>
+                                é uma estrutura que permite armazenar vários valores do mesmo tipo, funcionando como uma
+                                lista de elementos, como uma sequência de notas ou idades. Esses tipos de dados são
+                                essenciais para a organização e o funcionamento correto dos algoritmos.
                             </p>
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                            <div class="img-container2">
+                                <img src="../IMG/varPort.png" alt="Arduíno">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h2>O que são entradas e saídas digitais em circuitos integrados como o Arduíno</h2>
+                        <h2>Exemplo de Programa utilizando funções e vetor</h2>
+                        <div class="text">
+                            <p>Exemplo 1</p>
+<pre>
+<code>
+programa
+{
+	
+	funcao inteiro verEntre15e25(inteiro num){
+		se( num >= 15 e num <= 25){
+			retorne num
+		}senao{
+			retorne 0
+		}
+	}
 
-                        <div class="info-grid">
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
-                            </div>
-                            <p>
-                                <strong>Entradas e saídas digitais</strong> são pinos do microcontrolador que trabalham com apenas dois
-                                estados lógicos: ALTO (HIGH, normalmente 5V) e BAIXO (LOW, 0V). Uma entrada digital é
-                                usada para ler o estado de um dispositivo externo, como um botão ou um sensor digital.
-                                Uma saída digital é usada para controlar um componente externo, como acender um LED ou
-                                ativar um relé, fornecendo ou não tensão no pino.
-                            </p>
+	funcao inteiro verEntre40e60(inteiro num){
+		se( num >= 40 e num <= 60){
+			retorne num
+		}senao{
+			retorne 0
+		}
+	}
+
+	funcao inteiro verEntre80e90(inteiro num){
+		se( num >= 80 e num <= 90){
+			retorne num
+		}senao{
+			retorne 0
+		}
+	}
+
+	
+	
+	funcao inicio()
+	{
+		// 12 peças
+		inteiro num = 0, vetor[12], vetorB[12], vetorM[12], vetorA[12]
+		caracter op = 'S'
+		real media = 0.0, contador = 0.0, soma = 0.0
+
+	faca{
+
+		escreva(" =================================================== \n")
+		escreva("  Programa para verificar o peso das peças corretas  \n")
+		escreva(" =================================================== \n")
+		escreva("   'S' - para sair          \n")
+		escreva("   'B' - para pesos baixos  \n")
+		escreva("   'M' - para pesos medios  \n")
+		escreva("   'A' - para pesos altos   \n")
+		escreva(" ================================================ \n")
+		escreva("    Digite sua opção: ")
+		leia(op)
+		escreva("\n")
+		escreva(" ================================================ \n")
+
+		escolha(op){
+			caso 'S':
+				escreva(" Saindo do Programa! ")
+			pare
+			caso 'B':
+				para(inteiro i = 0; i < 12; i++){
+					num = sorteia(10,100)
+					vetor[i] = num
+					vetorB[i] = verEntre15e25(num)
+					se(vetorB[i] != 0){
+						escreva(" vetorB[",i,"] = ",vetorB[i]," está certo! \n")
+						contador = contador + 1
+						soma = soma + vetorB[i]
+					}					
+				}
+				media = soma / contador
+				escreva(" A média dos pesos certos é: ",media,"\n")
+				soma = 0.0
+				contador = 0.0
+			pare
+			caso 'M':
+				para(inteiro i = 0; i < 12; i++){
+					num = sorteia(10,100)
+					vetor[i] = num
+					vetorM[i] = verEntre40e60(num)
+					se(vetorM[i] != 0){
+						escreva(" vetorMA[",i,"] = ",vetorM[i]," está certo! \n")
+						contador = contador + 1
+						soma = soma + vetorM[i]
+					}					
+				}
+				media = soma / contador
+				escreva(" A média dos pesos certos é: ",media,"\n")
+				soma = 0.0
+				contador = 0.0
+			pare
+			caso 'A':
+				para(inteiro i = 0; i < 12; i++){
+					num = sorteia(10,100)
+					vetor[i] = num
+					vetorA[i] = verEntre80e90(num)
+					se(vetorA[i] != 0){
+						escreva(" vetorA[",i,"] = ",vetorA[i]," está certo! \n")
+						contador = contador + 1
+						soma = soma + vetorA[i]
+					}					
+				}
+				media = soma / contador
+				escreva(" A média dos pesos certos é: ",media,"\n")
+				soma = 0.0
+				contador = 0.0
+			pare
+			caso contrario:
+				escreva(" Opção inválida! Digite novamente! ")
+		}
+
+		}enquanto(op != 'S')		
+		
+	}
+
+
+}
+</code>
+</pre>
+
+                    <p>Exemplo 2</p><br>
+
+<pre>
+<code>
+programa
+{	
+	funcao inteiro verDiv3(inteiro num){
+		se( num % 3 == 0){
+			retorne num
+		}senao{
+			retorne 0
+		}
+	}
+
+	funcao inteiro verDiv5(inteiro num){
+		se( num % 5 == 0){
+			retorne num
+		}senao{
+			retorne 0
+		}
+	}
+
+	funcao inteiro verDiv7(inteiro num){
+		se( num % 7 == 0){
+			retorne num
+		}senao{
+			retorne 0
+		}
+	}
+	
+	funcao inicio()
+	{
+		inteiro num = 0, op = 0, vetor[15], vetor3[15], vetor5[15], vetor7[15]
+
+		faca{
+
+		escreva(" ================================================ \n")
+		escreva("   Programa para ver valores certos do Sensor     \n")
+		escreva(" ================================================ \n")
+		escreva("   0 - para sair             \n")
+		escreva("   3 - para divisíveis por 3 \n")
+		escreva("   5 - para divisíveis por 5 \n")
+		escreva("   7 - para divisíveis por 7 \n")
+		escreva(" ================================================ \n")
+		escreva("    Digite sua opção: ")
+		leia(op)
+		escreva("\n")
+		escreva(" ================================================ \n")
+
+		escolha(op){
+			caso 0:
+				escreva(" Saindo do Programa! ")
+			pare
+			caso 3:
+				para(inteiro i = 0; i < 15; i++){
+					num = sorteia(1,30)
+					vetor[i] = num
+					vetor3[i] = verDiv3(num)
+					se(vetor3[i] != 0){
+						escreva(" vetor3[",i,"] = ",vetor3[i]," está certo! \n")
+					}
+				}
+			pare
+			caso 5:
+				para(inteiro i = 0; i < 15; i++){
+					num = sorteia(1,30)
+					vetor[i] = num
+					vetor5[i] = verDiv5(num)
+					se(vetor5[i] != 0){
+						escreva(" vetor5[",i,"] = ",vetor5[i]," está certo! \n")
+					}
+				}
+			pare
+			caso 7:
+				para(inteiro i = 0; i < 15; i++){
+					num = sorteia(1,30)
+					vetor[i] = num
+					vetor7[i] = verDiv7(num)
+					se(vetor7[i] != 0){
+						escreva(" vetor7[",i,"] = ",vetor7[i]," está certo! \n")
+					}
+				}
+			pare
+			caso contrario:
+				escreva(" Opção inválida! Digite novamente! ")
+		}
+
+		}enquanto(op != 0)		
+		
+	}
+}
+</code>
+</pre>
+
+<p>Exemplo 3</p>
+
+<pre>
+<code>
+programa
+{
+	
+	funcao inteiro sortearNum(){
+		inteiro num = 0
+		num = sorteia(1,10)
+		retorne num
+		
+	}
+	funcao inicio()
+	{
+		inteiro vetor[20],num=0, total=0, contador=0, media
+
+	
+		enquanto(contador<20){
+			contador = contador+1
+			
+			num = sortearNum()
+			
+			vetor[contador-1]=num
+			escreva("\n")
+			total=total+vetor[contador-1]
+		}
+		
+		limpa()
+		media=total/20
+		escreva("A média é: ",media)
+	}
+}
+</code>
+</pre>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h2>O que são entradas e saídas analógicas em circuitos integrados como o Arduíno</h2>
-
-                        <div class="info-grid">
-                            <p>
-                                <strong>Entradas e saídas analógicas</strong> lidam com uma faixa contínua de valores. Uma entrada
-                                analógica, através de um conversor analógico-digital (ADC) no Arduíno, mede uma tensão
-                                variável (ex.: 0 a 5V) e a converte em um valor digital (ex.: 0 a 1023). Isto é
-                                essencial para ler sensores como potenciômetros ou sensores de luz analógicos. Uma saída
-                                analógica no Arduíno é simulada através da modulação por largura de pulso (PWM), que
-                                cria um efeito de tensão variável para controle de brilho em LEDs ou velocidade de
-                                motores.
-                            </p>
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h2>Programa para leitura de dados de um sensor analógico, acionando saídas digitais.</h2>
-
-                        <div class="info-grid">
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
-                            </div>
-                            <p>
-                                O sistema consiste em três camadas principais: um <strong>servidor backend</strong> que gerencia a lógica de negócio e comunicação, um <strong>frontend</strong> que fornece a interface com o usuário, e um <strong>Arduino</strong> que atua como controlador de hardware, formando uma solução completa de IoT
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h2>Diodos, LEDs e Display de 7 Segmentos</h2>
-
-                        <div class="info-grid">
-                            <p>
-                                <strong>O diodo</strong> é um componente semicondutor que permite a passagem de corrente em apenas uma direção, funcionando como uma válvula eletrônica. O LED é um diodo especial que emite luz quando polarizado diretamente. O display de 7 segmentos utiliza múltiplos LEDs organizados em segmentos que podem ser acionados individualmente para formar algarismos numéricos e alguns caracteres alfabéticos, sendo amplamente utilizado em painéis de instrumentos, relógios digitais e mostradores diversos.
-
-
-                            </p>
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h2>Cálculo da tensão, corrente, resistência pela Lei de Ohm</h2>
-
-                        <div class="info-grid">
-                            <p>
-                                <strong>A Lei de Ohm</strong> define a relação entre tensão (V), corrente (I) e resistência (R) através
-                                da fórmula V = I * R. Um script para calcular qualquer uma dessas grandezas, desde que
-                                as outras duas sejam conhecidas, pode ser implementado da seguinte forma:
-                            </p>
-                            <div class="leitura">
-                                <div class="custom-select">
-                                    <select id="op">
-                                        <option value="" disabled selected>Selecione qual deseja descobrir</option>
-                                        <option value="V">Tensão</option>
-                                        <option value="I">Corrente</option>
-                                        <option value="R">Resistência</option>
-                                    </select>
-                                </div><br><br>
-                                <label for="V">Digite a Tensão</label><br>
-                                <input type="text" id="V" placeholder="Ex: 4.5"><br>
-
-                                <label for="I">Digite a Corrente</label><br>
-                                <input type="text" id="I" placeholder="Ex: 2"><br>
-
-                                <label for="R">Digite a resistência</label><br>
-                                <input type="text" id="R" placeholder="Ex: 9"><br><br>
-
-                                <button onclick="calcular()">Calcular</button><br><br>
-
-                                <div id="res"></div>
-                            </div>
                         </div>
                     </div>
                 </div>

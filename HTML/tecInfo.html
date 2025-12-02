@@ -4,160 +4,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/tecInfo.css">
-    <title>Portifólio</title>
+    <title>TWY</title>
+    <link rel="stylesheet" href="../CSS/geral.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 </head>
 
 <body>
     <header>
-        <div class="img-sesi">
-            <img src="../IMG/logo-sesi.png" alt="">
-        </div>
-        <div class="cabecalho">
+        <h1>TWY./Tecnologia-da-Informação</h1>
+        <div class="header-right">
+            <div class="custom-select">
+                <nav>
+                    <select onchange="window.location.href=this.value">
+                        <option value="" disabled selected>Selecione um tópico</option>
+                        <option value="./tecInfo.html">Tecnologia da Informação</option>
+                        <option value="./eletoeletronica.html">Eletrônica</option>
+                        <option value="./bancoDados.html">Banco de Dados</option>
+                        <option value="./Redes.html">Redes</option>
+                        <option value="./logicaProg.html">Lógica de Programação</option>
+                        <option value="./logicaComp.html">Lógica da Computação</option>
+                        <option value="./contatos.html">Contatos</option>
+                    </select>
+                </nav>
+            </div>
             <nav>
-                <select onchange="window.location.href=this.value">
-                    <option value="" disabled selected>Selecione um tópico</option>
-                    <option value="./eletoeletronica.html">Eletrônica</option>
-                    <option value="./bancoDados.html">Banco de Dados</option>
-                    <option value="./Redes.html">Redes</option>
-                    <option value="./logicaProg.html">Lógica de Programação</option>
-                    <option value="./tecInfo.html">Tecnologia da Informação</option>
-                    <option value="./contatos.html">Contatos</option>
-                </select>
+                <a href="../index.html">
+                    <div class="home-icon">
+                        <i class="fa-regular fa-house"></i>
+                    </div>
+                </a>
             </nav>
-            
         </div>
     </header>
     <main>
-        <div class="titulo">
-            <h1>Fundamentos da Tecnologia da Informação</h1>
-        </div>
-        <div class="grid">
-            <div class="topico1">
-            <h2>O que é Hardware</h2>
-            <p>Hardware envolve <strong>qualquer componente físico que compõe um aparelho eletrônico.</strong> Os hardwares costumam ser relacionados somente aos computadores, mas também abrangem outros eletrônicos da tecnologia de consumo.</p><br>
-            <div class="img1">
-                <img src="../IMG/Fluxograma.png" alt="">
+        <section class="intro">
+            <div class="intro-text">
+                <p>Esta página apresenta os serviços oferecidos na área de Tecnologia da Informação, além de
+                    compartilhar conhecimentos sobre o setor. A atuação abrange desde a realização de seminários e
+                    treinamentos até a implementação de soluções completas, incluindo infraestrutura, desenvolvimento de
+                    software, suporte técnico e segurança cibernética</p>
             </div>
-        </div>
-        <div class="topico2">
-            <h2>O que é uma placa mãe?</h2>
-            <p>É a <strong>placa de circuito principal de um computador que conecta e permite a comunicação entre todos os componentes de hardware,</strong> como processador, memória RAM, disco rígido e placa de vídeo.</p><br>
-            <div class="img2">
-                <img src="../IMG/Algoritmo.png" alt="">
-            </div>
-        </div>
-        <div class="topico1">
-            <h2>O que é um processador?</h2>
-            <p>É o "cérebro" de um computador ou dispositivo eletrônico, sendo o componente central responsável por executar instruções e realizar cálculos para processar dados.</p>
-            <br>
-            <div class="img1">
-                <img src="../IMG/PortugolStudio.png" alt="">
-            </div>
-        </div>
-        <div class="topico2">
-            <h2>O que é memória RAM</h2>
-            <p>É o armazenamento de acesso rápido em um computador que guarda os dados e instruções que estão sendo usados ativamente pelo processador (CPU)</p>
-            <br>
-            <div class="img2">
-                <img src="../IMG/Portugol.png" alt="">
-            </div>
-        </div>
-        <div class="topico1">
-            <h2>O que é um Sistema Operacional?</h2>
-            <p>Um sistema operacional (SO) é o conjunto de programas que gerencia os recursos de hardware e software de um computador, permitindo que o usuário interaja com a máquina e que outros programas (como aplicativos) possam ser executados.</p><br>
-            <ul>
-                <li><strong>Windows</strong> - desenvolvido pela Microsoft, muito usado em computadores pessoais.</li>
-                <li><strong>macOS</strong> – sistema operacional dos computadores Apple (Mac).</li>
-                <li><strong>Linux</strong> – sistema de código aberto usado em servidores e também em desktops.</li>
-                <li><strong>Android</strong> - sistema operacional baseado em Linux, usado em smartphones e tablets.</li>
-            </ul>
-            <br>
-            <div class="img3">
-                <img src="../IMG/variavel.png" alt="">
-            </div>
-        </div>
-        <div class="topico2">
-            <h2>O que é um sistema de arquivos?</h2>
-            <p>O sistema de arquivos é o método que o sistema operacional usa para armazenar, organizar e gerenciar os dados em um dispositivo de armazenamento — como o HD, SSD, pendrive ou cartão de memória.</p><br>
+        </section>
 
-            <p>
-            Ele define como os arquivos são nomeados, gravados, acessados e estruturados em pastas (ou diretórios).
-            </p>
-                
-            <br>
-            <div class="img2">
-                <img src="../IMG/varPort.png" alt="">
+        <section class="portfolio">
+            <div class="grid">
+
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que é o Hardware de computadores? O que é placa mãe? Processador? ememória principal
+                            (RAM)?</h2>
+
+
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/hardware.jpg" alt="Resistor">
+                            </div>
+                            <p>
+                                O hardware de computadores representa a parte física e concreta da máquina, composta por
+                                todos os componentes eletrônicos e mecânicos que permitem seu funcionamento. Entre esses
+                                componentes, destacam-se três elementos fundamentais: a placa-mãe, o processador e a
+                                memória RAM. A placa-mãe atua como a espinha dorsal do sistema, interligando todos os
+                                dispositivos e permitindo que eles se comuniquem entre si, sendo essencial para a
+                                compatibilidade e a expansão do computador.
+                            </p>
+                        </div>
+
+                        <hr>
+
+
+                        <div class="info-grid">
+                            <p>
+                                O processador (CPU), por sua vez, funciona como o cérebro do equipamento. Sua tarefa
+                                principal é executar instruções, realizar cálculos e coordenar as atividades de todos os
+                                outros componentes. Já a memória RAM é responsável pelo armazenamento temporário dos
+                                dados que estão sendo utilizados ativamente pela CPU, agilizando o acesso e garantindo
+                                que as tarefas sejam processadas com fluidez, especialmente quando múltiplos programas
+                                estão em execução.
+                            </p>
+                            <div class="img-container">
+                                <img src="../IMG/cpu.jpg" alt="LED">
+                            </div>
+                        </div>
+
+                        <hr>
+
+
+                        <div class="info-grid">
+                            <div class="img-container">
+                                <img src="../IMG/ram.jpg" alt="Transistor">
+                            </div>
+                            <p>
+                                Em conjunto, esses componentes formam a base operacional de qualquer computador moderno:
+                                a placa-mãe estabelece a estrutura de conexões, o processador realiza as operações e a
+                                memória RAM fornece o espaço de trabalho rápido e temporário. Sem a integração entre
+                                eles, o computador não teria capacidade de processar informações, executar softwares ou
+                                responder aos comandos do usuário.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>O que é um sistema operacional?</h2>
+
+                        <div class="SO-imgs">
+                            <img src="../IMG/windowsimg.png" alt="Windows logo" class="SO-img">
+                            <img src="../IMG/linuxlogo.png" alt="" class="SO-img">
+                            <img src="../IMG/macOsLogo.png" alt="" class="SO-img">
+                            <img src="../IMG/androidLogo.png" alt="" class="SO-img">
+                        </div><br>
+
+                        <p>
+                            Um sistema operacional é o software central que gerencia todos os recursos de um computador,
+                            atuando como intermediário entre o hardware, os aplicativos e o usuário. Ele controla o
+                            funcionamento do processador, a alocação de memória, o armazenamento de dados, a execução de
+                            programas e a comunicação com dispositivos externos, como impressoras, teclados e redes.
+                            Além de oferecer uma interface — que pode ser gráfica, como no Windows e no macOS, ou
+                            baseada em comandos de texto, como em algumas versões do Linux —, o sistema operacional
+                            também assegura a segurança, a organização dos arquivos e a execução eficiente e estável das
+                            tarefas, sendo indispensável para o uso prático de qualquer máquina. <br><br>
+
+                            Existem diversos sistemas operacionais desenvolvidos para diferentes fins e dispositivos.
+                            Quatro exemplos representativos incluem o Windows, da Microsoft, amplamente utilizado em
+                            computadores pessoais e corporativos; o Linux, um sistema de código aberto, modular e muito
+                            presente em servidores e ambientes de desenvolvimento; o macOS, sistema proprietário da
+                            Apple, conhecido por sua integração com o ecossistema da marca e sua interface elegante; e o
+                            Android, desenvolvido pelo Google, que domina o mercado de dispositivos móveis, como
+                            smartphones e tablets, sendo também utilizado em outros equipamentos inteligentes.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="topico1">
-            <h2>Exemplos de programa em portugol</h2>
-            <p>-</p>
-            <br>
-            <div class="img1">
-                <img src="../IMG/PortugolStudio.png" alt="">
+            <div class="card">
+                <div class="card-content">
+                    <h2>O que é o sistema de arquivos? Como funciona em modo texto (cmd) e modo gráfico (explorer)?
+                    </h2>
+
+                    <div class="info-grid">
+                        <p>
+                            O sistema de arquivos é a estrutura lógica e organizacional utilizada por um sistema
+                            operacional para gerenciar como os dados são armazenados, organizados e acessados em um
+                            dispositivo de armazenamento, como um disco rígido (HD), SSD ou pen drive. Ele define regras
+                            para a nomenclatura, a hierarquia (pastas e subpastas), os atributos e as permissões de
+                            acesso a arquivos, além de controlar o espaço disponível no disco.
+                        </p>
+                        <div class="img-container">
+                            <img src="../IMG/arquivos.png" alt="Gerenciador de arquivos do windows">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="topico2">
-            <h2>ex1</h2>
-            <p>-</p>
-            <br>
-            <div class="img2">
-                <img src="../IMG/Portugol.png" alt="">
+            <div class="card">
+                <div class="card-content">
+                    <h2>O que é software de escritório?</h2>
+
+
+                    <div class="info-grid">
+                        <div class="img-container">
+                            <img src="../IMG/word.png" alt="Microsoft Word">
+                        </div>
+                        <p>
+                            <strong>Microsoft Word</strong> é um editor de texto usado para criar documentos como
+                            relatórios, cartas, currículos e textos com formatação avançada. No exemplo, ele é aplicado
+                            para exibir a Declaração Universal dos Direitos Humanos, demonstrando sua capacidade de
+                            estruturar textos com parágrafos, citações e formatação profissional, além de oferecer
+                            recursos como verificação ortográfica e inserção de elementos visuais.
+                        </p>
+                    </div>
+
+                    <hr>
+
+
+                    <div class="info-grid">
+                        <p>
+                            <strong>Microsoft Excel</strong> é uma planilha eletrônica utilizada para organização,
+                            cálculos e análise de dados. A primeira planilha mostra um "Controle de Fluxo de Notas
+                            Fiscais", com registros de entradas e saídas, valores, transportadoras e status de
+                            conferência — útil para gestão logística e financeira. A segunda planilha apresenta um
+                            boletim escolar, com cálculo de médias, total de faltas e situação do aluno, exemplificando
+                            seu uso para controle acadêmico e análise numérica.
+                        </p>
+                        <div class="img-container">
+                            <img src="../IMG/excel.png" alt="LED">
+                        </div>
+                    </div>
+
+                    <hr>
+
+
+                    <div class="info-grid">
+                        <div class="img-container">
+                            <img src="../IMG/pptx.png" alt="Transistor">
+                        </div>
+                        <p>
+                            <strong>Microsoft PowerPoint</strong> é um software de apresentações que permite criar
+                            slides com texto, imagens, gráficos e animações. O próprio arquivo enviado é uma
+                            apresentação que inclui desde descrições do Word até gráficos de estatística e equações
+                            matemáticas, mostrando sua aplicação para aulas, palestras e relatórios visuais.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="topico1">
-            <h2>ex2</h2>
-            <p>-</p>
-            <br>
-            <div class="img1">
-                <img src="../IMG/PortugolStudio.png" alt="">
-            </div>
-        </div>
-        <div class="topico2">
-            <h2>ex3</h2>
-            <p>-</p>
-            <br>
-            <div class="img2">
-                <img src="../IMG/PortugolStudio.png" alt="">
-            </div>
-        </div>
-        <div class="topico1">
-            <h2>Exemplos de programa em portugol/vetor</h2>
-            <p>-</p>
-            <br>
-            <div class="img1">
-                <img src="../IMG/PortugolStudio.png" alt="">
-            </div>
-        </div>
-        <div class="topico2">
-            <h2>ex1</h2>
-            <p>-</p>
-            <br>
-            <div class="img2">
-                <img src="../IMG/Portugol.png" alt="">
-            </div>
-        </div>
-        <div class="topico1">
-            <h2>ex2</h2>
-            <p>-</p>
-            <br>
-            <div class="img1">
-                <img src="../IMG/PortugolStudio.png" alt="">
-            </div>
-        </div>
-        <div class="topico2">
-            <h2>ex3</h2>
-            <p>-</p>
-            <br>
-            <div class="img2">
-                <img src="../IMG/PortugolStudio.png" alt="">
-            </div>
-        </div>
-        </div>
+        </section>
     </main>
     <footer>
-
+        <p>By Matheus Gomes Steingräber</p>
+        <p>TWY</p>
     </footer>
 </body>
 

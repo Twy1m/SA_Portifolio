@@ -7,7 +7,7 @@
     <title>TWY</title>
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script src="../JS/Select.js"></script>
+    <script src="../JS/cadastro.js"defer></script>
 
 </head>
 
@@ -22,6 +22,7 @@
                         <option value="./eletoeletronica.html">Eletrônica</option>
                         <option value="./bancoDados.html">Banco de Dados</option>
                         <option value="./Redes.html">Redes</option>
+                        <option value="./logicaComp.html">Lógica Computacional</option>
                         <option value="./logicaProg.html">Lógica de Programação</option>
                         <option value="./tecInfo.html">Tecnologia da Informação</option>
                         <option value="./contatos.html">Contatos</option>
@@ -55,7 +56,7 @@
                         <!-- Resistor -->
                         <div class="info-grid">
                             <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="ft1">
+                                <img src="../IMG/SGBD.jpg" alt="ft1">
                             </div>
                             <p>
                                 Um Sistema de Gerenciamento de Banco de Dados (SGBD) é uma plataforma software que
@@ -78,7 +79,7 @@
 
                             </p>
                             <div class="img-container">
-                                <img src="../IMG/led.jpg" alt="ft2">
+                                <img src="../IMG/SQL.png" alt="ft2">
                             </div>
                         </div>
 
@@ -87,7 +88,7 @@
                         <!-- Transistor -->
                         <div class="info-grid">
                             <div class="img-container">
-                                <img src="../IMG/transistor.jpg" alt="ft3">
+                                <img src="../IMG/NoSQL.png" alt="ft3">
                             </div>
                             <p>
                                 Já os sistemas não-relacionais, como MongoDB e Redis, oferecem modelos flexíveis de
@@ -109,13 +110,13 @@
                         <div class="info-grid">
                             <div class="carrossel">
                                 <div class="img-container">
-                                    <img src="../IMG/resistor.jpg" alt="MySQL">
+                                    <img src="../IMG/mysql.png" alt="MySQL">
                                 </div><br>
                                 <div class="img-container">
-                                    <img src="../IMG/resistor.jpg" alt="PostgreSQL">
+                                    <img src="../IMG/pg.png" alt="PostgreSQL">
                                 </div><br>
                                 <div class="img-container">
-                                    <img src="../IMG/resistor.jpg" alt="MongoDB">
+                                    <img src="../IMG/mongoDB.png" alt="MongoDB">
                                 </div>
                             </div>
                             <p>
@@ -153,7 +154,7 @@
                                 integridade e otimização do banco de dados.
                             </p>
                             <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
+                                <img src="../IMG/dicionario.jpg" alt="Arduíno">
                             </div>
                         </div>
                     </div>
@@ -163,7 +164,6 @@
                         <h2>O que é uma modelagem de banco de dados? E o modelo DER? MER?</h2>
 
                         <div class="info-grid">
-                            
                             <p>
                                 A modelagem de banco de dados refere-se ao processo de projetar a estrutura lógica e
                                 física de um banco, definindo como os dados serão organizados, relacionados e acessados.
@@ -183,52 +183,51 @@
                 <div class="card">
                     <div class="card-content">
                         <h2>Exemplo de um diagrama DER</h2>
-
-                        <div class="info-grid">
-                            <p>
-                                A <strong>linguagem de programação padrão</strong> utilizada no Arduíno é baseada em
-                                C/C++. O ambiente de
-                                desenvolvimento (IDE) do Arduíno fornece uma implementação simplificada da linguagem C++
-                                com adições de bibliotecas específicas para controlar as funções da placa. Embora o
-                                Python não seja comumente usado para programar o microcontrolador do Arduíno
-                                diretamente, é possível utilizá-lo para comunicação com a placa via interfaces seriais a
-                                partir de um computador.
-                            </p>
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
-                            </div>
+                        <div class="ex">
+                                <div class="img-exemplo">
+                                    <img src="../IMG/der.png" alt="Arduíno">
+                                </div>
+                        </div>
                         </div>
                     </div>
-                </div>
                 <div class="card">
                     <div class="card-content">
-                        <h2>O que são entradas e saídas digitais em circuitos integrados como o Arduíno</h2>
-
-                        <div class="info-grid">
-                            <div class="img-container">
-                                <img src="../IMG/resistor.jpg" alt="Arduíno">
-                            </div>
-                            <p>
-                                <strong>Entradas e saídas digitais</strong> são pinos do microcontrolador que trabalham
-                                com apenas dois
-                                estados lógicos: ALTO (HIGH, normalmente 5V) e BAIXO (LOW, 0V). Uma entrada digital é
-                                usada para ler o estado de um dispositivo externo, como um botão ou um sensor digital.
-                                Uma saída digital é usada para controlar um componente externo, como acender um LED ou
-                                ativar um relé, fornecendo ou não tensão no pino.
-                            </p>
+                        <h2>Exemplo de um diagrama MER</h2>
+                        <div class="ex">
+                                <div class="img-exemplo">
+                                    <img src="../IMG/MER.png" alt="Arduíno">
+                                </div>
+                        </div>
                         </div>
                     </div>
-                </div>
 
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Exemplo de formulario de cadastro</h2>
+
+                        <div class="formulario">
+                            <label for="nome">Insira seu nome</label><br>
+                            <input type="text" id="nome"><br>
+                            <label for="email">Insira seu email</label><br>
+                            <input type="text" id="email"><br>
+    
+                            <button onclick="principal()">Cadastro</button>
+    
+                            <div id="res"></div>
+                        </div>
+                    
+                    </div>
+                </div>
+                    </div>
+                </div>
             </div>
-            </div>
-            </div>
-            </div>
+        </div>
         </section>
     </main>
     <footer>
         <p>By Matheus Gomes Steingräber</p>
         <p>TWY</p>
     </footer>
-    </body>
+</body>
+
 </html>

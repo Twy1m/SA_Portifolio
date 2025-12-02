@@ -127,6 +127,11 @@ nav a{
 }
 
 .intro-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 64px;
     background: linear-gradient(135deg, rgba(125, 91, 166, 0.15), rgba(168, 125, 184, 0.12));
     height: 200px;
     border-radius: 8px;
@@ -168,9 +173,20 @@ nav a{
 }
 
 .card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 64px;
     height: 220px;
     background: linear-gradient(135deg, rgba(125, 91, 166, 0.2), rgba(168, 125, 184, 0.15));
     position: relative;
+}
+
+i:hover{
+    transition: color 0.3s;
+    color: #a87db8;
+    opacity: 1;
 }
 
 .card-footer {
