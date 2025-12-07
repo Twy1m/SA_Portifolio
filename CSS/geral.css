@@ -176,6 +176,40 @@ nav a{
     margin: 50px 0;
     padding: 30px;
 }
+.grid-functions {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+
+.botoes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.respostas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+#numGerados, #res3 {
+    display: flex;
+    background-color: #1a1a2e;
+    border-left:10px solid rgba(140, 100, 180, 0.4);
+    border-radius: 3px;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .ex{
     display: flex;
     text-align: center;
@@ -295,8 +329,13 @@ hr {
     margin: 30px auto;
     width: 80%;
 }
-span{
+
+h3{
     font-size: 24px;
+
+}
+span{
+    font-size: 16px;
     font-weight: bold;
 }
 
