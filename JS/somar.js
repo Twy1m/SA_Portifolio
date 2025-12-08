@@ -1,42 +1,40 @@
 //==============================================================
 //Segundo Programa
-let res3 = document.getElementById('res3')
-let numGerados = document.getElementById('numGerados')
-let arr = []
 
-function ordenarArr(){
-    if(arr.length > 0){
-        let qtd = 20
-        let valor = 0
-        for(let j = 0; j < qtd -1; j++){
-            for(let i = 0; i < qtd -j -1; i++){
-                if(arr[i] > arr[i+1]){
-                    valor = arr[i] 
-                    arr[i] = arr[i+1]
-                    arr[i+1] = valor
-                }
-            }
+//Apresente um script para somar 10 números aleatórios de 1 a 220 em um array.
+
+let res4 = document.getElementById('res4')
+let numGerados2 = document.getElementById('numGerados2')
+let arr2 = []
+
+function somar_SOMAR(){
+    let qtd = arr2.length
+    let soma = 0
+    if(arr2.length > 0){
+        for(let i = 0; i<qtd; i++){
+            soma += arr2[i]
         }
-        res3.innerHTML = ``
-        res3.innerHTML += `Os números gerados ordenados de forma crescente: <br>[${arr}]
-`   }else{
-    res3.innerHTML = ``
-    res3.innerHTML += `Gere os números primeiro`
+        res4.innerHTML = ``
+        res4.innerHTML += `A soma dos números gerados foi: ${soma}`
+    }else{
+    res4.innerHTML = ``
+    res4.innerHTML += `Gere os números primeiro`
 }
 }
 
-function generateRandon(){
-    min = 1, max = 20
-    arr = []
-    for(let i = 0; i<20; i++){
-        arr[i] = Math.floor(Math.random() * (max - min) + min)
+function generateRandon_SOMAR(){
+    min = 1, max = 221
+    arr2 = []
+    
+    for(let i = 0; i<10; i++){
+        arr2[i] = Math.floor(Math.random() * (max - min) + min)
     }
-    numGerados.innerHTML = ``
-    numGerados.innerHTML += `Os números gerados foram [${arr}]`
+    numGerados2.innerHTML = ``
+    numGerados2.innerHTML += `Os números gerados foram [${arr2}]`
 }
 
-function limpar(){
-    arr = []
-    numGerados.innerHTML = ``
-    res3.innerHTML = ``
+function limpar_SOMAR(){
+    arr2 = []
+    numGerados2.innerHTML = ``
+    res4.innerHTML = ``
 }

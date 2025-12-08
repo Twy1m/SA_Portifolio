@@ -1,10 +1,11 @@
-//==============================================================
-//PRIMEIRO PROGRAMA
+// ==============================================================
+// PRIMEIRO PROGRAMA
+
 let res3 = document.getElementById('res3')
 let numGerados = document.getElementById('numGerados')
 let arr = []
 
-function ordenarArr(){
+function ordenarArr_ORDENAR(){
     if(arr.length > 0){
         let qtd = 20
         let valor = 0
@@ -25,18 +26,19 @@ function ordenarArr(){
 }
 }
 
-function generateRandon(){
-    min = 1, max = 20
+function generateRandon_ORDENAR(){
+    const min = 1, max = 20
     arr = []
     for(let i = 0; i<20; i++){
-        arr[i] = Math.floor(Math.random() * (max - min) + min)
+        arr[i] = Math.floor(Math.random() * (max - min)+ 1 + min)
     }
     numGerados.innerHTML = ``
     numGerados.innerHTML += `Os números gerados foram [${arr}]`
 }
 
-function limpar(){
+function limpar_ORDENAR(){
     arr = []
     numGerados.innerHTML = ``
     res3.innerHTML = ``
 }
+

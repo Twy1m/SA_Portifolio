@@ -200,7 +200,13 @@ nav a{
     gap: 30px;
 }
 
-#numGerados, #res3 {
+#numGerados,
+#numGerados2,
+ #res3, 
+ #res4, 
+ #res5,
+ #res6,
+ #res7 {
     display: flex;
     background-color: #1a1a2e;
     border-left:10px solid rgba(140, 100, 180, 0.4);
@@ -209,6 +215,9 @@ nav a{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.res7{
+    width: 400px;
 }
 .ex{
     display: flex;
@@ -354,6 +363,16 @@ button{
 .info{
     height: 250px;
     width: 250px;
+}
+
+.conter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    flex-direction: column;
+    margin: 0px auto;
 }
 #res,
 #res2{

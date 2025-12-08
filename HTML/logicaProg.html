@@ -7,6 +7,11 @@
     <title>TWY</title>
     <link rel="stylesheet" href="../CSS/geral.css">
     <script src="../JS/ordenar.js" defer></script>
+    <script src="../JS/somar.js" defer></script>
+    <script src="../JS/matriz.js" defer></script>
+    <script src="../JS/IMC.js" defer></script>
+    <script src="../JS/temp.js" defer></script>
+    <script src="../JS/linear.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
@@ -88,7 +93,7 @@
                                 memória.
                             </p>
                             <div class="img-container">
-                                <img src="../IMG/C++.png" alt="LED">
+                                <img src="../IMG/C++.png" alt="C++">
                             </div>
                         </div>
 
@@ -97,7 +102,7 @@
 
                         <div class="info-grid">
                             <div class="img-container">
-                                <img src="../IMG/ram.jpg" alt="Transistor">
+                                <img src="../IMG/JS.png" alt="JavaScript">
                             </div>
                             <p>
                                 <span>JavaScript</span><br>
@@ -121,7 +126,7 @@
                                 financeiros.
                             </p>
                             <div class="img-container">
-                                <img src="../IMG/cpu.jpg" alt="LED">
+                                <img src="../IMG/Java.png"Java">
                             </div>
                         </div>
 
@@ -130,7 +135,7 @@
 
                         <div class="info-grid">
                             <div class="img-container">
-                                <img src="../IMG/ram.jpg" alt="Transistor">
+                                <img src="../IMG/Python.png" alt="Python">
                             </div>
                             <p>
                                 <span>Python</span><br>
@@ -154,7 +159,7 @@
                                 evoluiu para suportar programação orientada a objetos e padrões modernos.
                             </p>
                             <div class="img-container">
-                                <img src="../IMG/cpu.jpg" alt="LED">
+                                <img src="../IMG/PHP.png" alt="PHP">
                             </div>
                         </div>
                     </div>
@@ -166,7 +171,7 @@
 
                     <div class="info-grid">
                         <div class="img-container">
-                            <img src="../IMG/arquivos.png" alt="Gerenciador de arquivos do windows">
+                            <img src="../IMG/interpretada.jpg" alt="Linguagem de programação interpretada">
                         </div>
                         <p>
                             Uma linguagem de programação interpretada é aquela cujo código-fonte é executado linha por
@@ -189,7 +194,7 @@
                             (sistema operacional + arquitetura de processador), que pode ser executado diretamente pelo
                             processador, sem necessidade de ferramentas intermediárias durante a execução.
                         <div class="img-container">
-                            <img src="../IMG/arquivos.png" alt="Gerenciador de arquivos do windows">
+                            <img src="../IMG/copilado.png" alt="Linguagem de programação copilada">
                         </div>
                     </div>
                 </div>
@@ -201,7 +206,7 @@
 
                     <div class="info-grid">
                         <div class="img-container">
-                            <img src="../IMG/word.png" alt="Microsoft Word">
+                            <img src="../IMG/HTML.png" alt="HTML">
                         </div>
                         <p>
                             HTML (Linguagem de Marcação de Hipertexto) é responsável pela estrutura e conteúdo da
@@ -221,7 +226,7 @@
                             corte de cabelo e a maquiagem, tudo que deixa o site visualmente atraente e organizado.
                         </p>
                         <div class="img-container">
-                            <img src="../IMG/excel.png" alt="LED">
+                            <img src="../IMG/CSS.png" alt="HTML E CSS">
                         </div>
                     </div>
 
@@ -243,7 +248,7 @@
 
                     <div class="info-grid">
                         <div class="img-container">
-                            <img src="../IMG/arquivos.png" alt="Gerenciador de arquivos do windows">
+                            <img src="../IMG/vscode.png" alt="IDE visual studio code">
                         </div>
                         <p>
                             Uma IDE (Ambiente de Desenvolvimento Integrado) é um software que reúne todas as ferramentas
@@ -266,8 +271,8 @@
                     <div class="grid-functions">
 
                         <div class="botoes-container">
-                            <button onclick="generateRandon()">Gerar Números</button>
-                            <button onclick="ordenarArr()">Ordenar</button>
+                            <button onclick="generateRandon_ORDENAR()">Gerar Números</button>
+                            <button onclick="ordenarArr_ORDENAR()">Ordenar</button>
                         </div>
 
 
@@ -276,7 +281,116 @@
                             <div id="res3"></div>
                         </div>
                     </div>
-                    <button onclick="limpar()">Limpar</button>
+                    <button onclick="limpar_ORDENAR()">Limpar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h2>Somar números aleatórios de 1 a 220</h2>
+
+                    <div class="grid-functions">
+
+                        <div class="botoes-container">
+                            <button onclick="generateRandon_SOMAR()">Gerar Números</button>
+                            <button onclick="somar_SOMAR()">Somar</button>
+                        </div>
+
+
+                        <div class="respostas-container">
+                            <div id="numGerados2"></div>
+                            <div id="res4"></div>
+                        </div>
+                    </div>
+                    <button onclick="limpar_SOMAR()">Limpar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h2>Gerar matriz aleatória 3x3</h2>
+
+                    <div class="grid-functions">
+
+                        <div>
+                            <button onclick="gerarMat_MAT()">Gerar Números</button>
+                        </div>
+
+                        <div>
+                            <div id="res5"></div>
+                        </div>
+                    </div>
+                    <button onclick="limpar_MAT()">Limpar</button>
+                </div>
+            </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Cálculo de IMC</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                <strong>Para calcular o IMC,</strong> divide-se o peso (kg) pela altura ao quadrado (m²). Por exemplo, se você pesa 70 kg e tem 1,75 m de altura, o cálculo seria: 70 / (1,75 * 1,75) = 22,86 kg/m². Este valor ajudará a entender a categoria de faixa de peso que se encontra.
+                            </p>
+                            <div class="info">
+                                <label for="peso">Insira o seu peso</label><br>
+                                <input type="text" id="peso" placeholder="Ex: 49"><br>
+
+                                <label for="altura">Insira a sua altura em Metros</label><br>
+                                <input type="text" id="altura" placeholder="Ex: 1.74"><br>
+
+                                <button onclick="calcIMC()">Calcular</button><br><br>
+                                
+                                <div id="res6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                    <div class="card-content">
+                        <h2>Conversão de temperatura Celcius e Fahrenheit</h2>
+                            <div class="conter">
+                                <div class="custom-select">
+                                    <select id="op">
+                                        <option value="" disabled selected>Selecione qual deseja converter</option>
+                                        <option value="c">Celcius para Fahrenheit</option>
+                                        <option value="f">Fahrenheit para Celcius</option>
+                                    </select>
+                                </div><br><br>
+                                
+                                <label for="valor">DIgite o valor a ser convertido</label>
+                                <input type="text" id="valor" placeholder="Ex: 32">
+
+                                <button onclick="principal_TEMP()">Calcular</button><br>
+                                
+                                <div class="res7" id="res7"></div><br>
+
+                                <button onclick="limpar_TEMP()">Limpar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Algoritmo de busca linear</h2>
+
+                        <div class="info-grid">
+                            <p>
+                                <strong>A busca linear,</strong> também conhecida como busca sequencial, é o algoritmo de busca mais simples e intuitivo. Ele percorre cada elemento de uma lista (array) sequencialmente, do primeiro ao último elemento, comparando cada valor com o elemento procurado. Quando encontra um elemento igual ao valor buscado, retorna sua posição (índice) na lista. Se percorrer toda a lista sem encontrar o elemento, retorna um valor indicando que o elemento não foi encontrado (geralmente -1 ou null).
+                            </p>
+
+                            <div class="info">
+                                <label for="numbusca">Insira o número a ser buscado numa lista de 100 números</label><br>
+                                <input type="text" id="numbusca" placeholder="Ex: 49"><br>
+
+                                <button onclick="buscarNumero_LINEAR()">Procurar</button><br><br>
+                                
+                                <div id="res8"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
