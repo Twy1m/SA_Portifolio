@@ -259,6 +259,12 @@ nav a{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+.video-ex{
+    border-radius: 10px;
+    border: 2px solid rgba(140, 100, 180, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 .formulario{
     width: 300px;
     margin: 0 auto; 
